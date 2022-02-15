@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BACKPACK"GANGWONDO"</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png"></a>
+        </div>
+        <ul class="nav">
+            <li onclick="location.href='backpackmain.html'">Backpack Tour</li>
+            <li onclick="location.href='koreamain.html'">Trip To Korea</li>
+            <li onclick="location.href='euromain.html'">Trip To Europe</li>
+        </ul>
+    <div id="modalwindow">
+        <input type="checkbox" id="login" class="checkbox">
+        <label for="login" class="login_text">Login<img src="images/login2.png"style="width:45px; height:45px;"></label>
+        <div class="loginwrap">
+        <div class="loginmain">
+            <label for="login" class="loginclose">X</label>
+            <div id="login">
+                <form name="loginfrm" method="post" action="">
+                    <table class="logintable">
+                        <tr>
+                            <td colspan="3">
+                                <img src="images/logo.png">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="text" class="logintable_t"
+                                 placeholder="ID또는 E-mail계정을 입력해주세요." name="usid">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="password" class="logintable_t"
+                                placeholder="비밀번호를 입력해주세요." name="uspw">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="button" class="login_bt"
+                                value="Login" onclick="login()">
+                            </td>
+                        </tr>
+                        <tr class="login_sub">
+                            <td onclick="pop()">회원 가입</td>
+                            <td onclick="pop2()">계정 찾기</td>
+                            <td onclick="pop3()">비밀번호 찾기</td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <label for="login" class="loginback"></label>
+        </div>
+    </div>
+</header>
+<div style="padding-bottom: 100px;">
+    <div id="gangwondo">
+        <div class="main_img">
+            <img src="images/gdo_text.png">
+        </div>
+        <p class="main_text2">'휘떡~휘떡~오시라께'<br>
+           해돋이하면 여기!<span style="font-size: 55px; color: rgb(250, 119, 243);">'자연과 각종레저의 명소'</span>강원도
+        </p>
+    </div>
+    <div id="middle_2">
+        <div class="middle_wrap_2">
+            <div class="mini_menu">홈 > 강원도 > 강원도여행정보</div>
+        </div>
+    </div>
+    <div id="content" style="height:120px">
+        <div class="box4">
+            <div class="box1">
+                * BACKPACK TOUR * 가 추천하는 강원도여행
+            </div><!--con_end-->
+        </div>
+    </div>
+    <br>
+    <div id="content_3">
+        <div class="con3_title">속초 영금정</div>
+        <div class="con3_box">
+            <div class="con3_box1">
+                <div class="con3_img">
+                    <img src="images/gdo4.jpg">
+                </div>
+            </div>
+            <div class="con3_box1">
+                <ul class="con3_text">
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">낮 과 밤 모두 만족하는</li>
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">바다위에서 느끼는 파도소리,베스트 포토존!!</li>
+                    <br>
+                    <h3 style="color: rgb(68, 67, 67);">#속초 영금정 정보</h3>
+                    <li style="color: gray;">-연중무휴(기상,파도높이따라 입장불가능)</li>
+                    <li style="color: gray;">-드라이브길도 있음/주차가능
+                    <li style="color: gray;">- 주소지 : 강원 속초시 영금정로 43<br>
+                                               -(동명동 등대밑,큰바위 위에 자리)</li>
+                    <li style="color: gray;"> - 문의전화 :033-639-2690</li>
+                </ul>
+            </div>
+        </div>
+    </div><!--content1_end-->
+    <br>
+    <br>
+    <div id="content_3">
+        <div class="con3_title">구봉산 산토리니</div>
+        <div class="con3_box">
+            <div class="con3_box1">
+                <div class="con3_img">
+                    <img src="images/gdo5.jpg">
+                </div>
+            </div>
+            <div class="con3_box1">
+                <ul class="con3_text">
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">비오는날도 마냥좋다!<br>이탈리아 현지 맛&멋!!오너쉐프 </li>
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">야외 웨딩의 명소,'소원의종'과'바다'배경!!</li>
+                    <br>
+                    <h3 style="color: rgb(68, 67, 67);">#춘천 산토리니 정보</h3>
+                    <li style="color: gray;">-'야외웨딩'사전예약가능</li>
+                    <li style="color: gray;">-매일:09:30~21:00<br>
+                                               -(식사주문)매일:10:30~20:00 </li>
+                    <li style="color: gray;">- 주소지 : 강원 춘천시 동면 순환대로 1154-97</li>
+                    <li style="color: gray;">-단체석, 주차,남/녀 화장실구분,국민지원금</li>
+                    <li style="color: gray;">-홈페이지 :<a href="http://춘천산토리니.com/">http://춘천산토리니.com/</a></li>
+                    <li style="color: gray;"> - 문의전화 : 033-242-3010</li>
+                </ul>
+            </div>
+
+        </div>
+    </div><!--content2_end-->
+    <br>
+    <br>
+    <div class="guide_icon" onclick="location.href='reservation_gangwondo.html'"></div>
+    <div id="content_3">
+        <div class="con3_title">대관령 양떼목장</div>
+        <div class="con3_box">
+            <div class="con3_box1">
+                <div class="con3_img">
+                    <img src="images/gdo6.jpg">
+                </div>
+            </div>
+            <div class="con3_box1">
+                <ul class="con3_text">
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">한국의 알프스!!향긋한 풀내음가득!!</li>
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">양들과 함께 하루를'힐링' 할수있는곳!!</li>
+                    <br>
+                    <h3 style="color: rgb(68, 67, 67);">#대관령 양떼목장 정보</h3>
+                    <li style="color: gray;">-이용시간:홈페이지 or 네이버페이 확인</li>
+                    <li style="color: gray;">- 주소지 : 강원 평창군 대관령면 대관령마루길 483-32 대관령양떼목장</li>
+                    <li style="color: gray;">-요금:대인6,000원/소인4,000원<br>
+                                               -요금:대인단체5,000원/소인단체3,500원/우대(개인,단체)3,000원</li>
+                    <li style="color: gray;"> - 홈페이지 :<a href="http://www.yangtte.co.kr/">http://www.yangtte.co.kr/</a></li>
+                    <li style="color: gray;"> - 문의전화 :033-335-1966</li>
+                </ul>
+            </div>
+
+        </div>
+    </div><!--content3_end-->
+    <br>
+    <br>
+    <div class="guide_icon"onclick="location.href='reservation_gangwondo.html'"></div>
+    <div id="content_3">
+        <div class="con3_title">속초 종합중앙시장</div>
+        <div class="con3_box">
+            <div class="con3_box1">
+                <div class="con3_img">
+                    <img src="images/gdo7.jpg">
+                </div>
+            </div>
+            <div class="con3_box1">
+                <ul class="con3_text">
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">'관광&수산'중심으로 속초대표!! </li>
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">다양한 먹거리와 생동감!!<br>상인들의 '정'은 덤!!</li>
+                    <br>
+                    <h3 style="color: rgb(68, 67, 67);">#속초 종합중앙시장 정보</h3>
+                    <li style="color: gray;">-품목에 따라 전문화된 골목들이 있다</li>
+                    <li style="color: gray;"> ＊이용요금 :무료/체험비는 별도</li>
+                    <li style="color: gray;"> ＊이용시간 :평일 08:00 - 24:00(-연중무휴)
+                    <li style="color: gray;">- 주소지 : 강원 속초시 중앙로147번길 12</li>
+                    <li style="color: gray;">-홈페이지:<a href="http://sokcho-central.co.kr/">http://sokcho-central.co.kr/</a></li>
+                    <li style="color: gray;"> -대규모주차장,포장,배달,유아시설(놀이방)</li>
+                </ul>
+            </div>
+        </div>
+    </div><!--content3_end-->
+    </div>
+    <footer>
+        <div id="footer_wrap">
+            <div class="footer_box"style="display: flex;">
+                <p onclick="location.href='refund2.html'"> 취소 환불 규정</p>
+                <p onclick="location.href='emailban.html'">이메일무단수집거부</p>
+                <p onclick="location.href='policy.html'">개인정보처리방침</p>
+            </div>
+            <div class="footer_box">
+                <p >상호명:BACKPACK TOUR</p>
+                <p>대표자:김가방</p>
+                <p>개인정보책임자:정주머니</p>
+                <p>상담전화:1234-5678</p>
+                <p>주소: 대한민국 부산광역시 아버지구 가방에들어가신다.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+<script>
+    function send(){
+        if(frm1.departure.value==""){alert("출발지을 지정하세요");frm1.departure.focus();return false;}
+        if(frm1.destination.value==""){alert("도착지을 지정하세요");frm1.destination.focus(); return false;}
+        if(frm1.date1.value==""){alert("출발일을 지정하세요");frm1.date1.focus();return false;}
+        if(frm1.date2.value==""){alert("도착일을 지정하세요");frm1.date2.focus(); return false;}
+        document.frm1.submit();
+    }
+    function login(){
+        if(loginfrm.usid.value==""){alert("ID또는 E-mail계정을 입력하세요.");loginfrm.usid.focus(); return false;}
+        if(loginfrm.uspw.value==""){alert("비밀번호를 입력하세요.");loginfrm.uspw.focus(); return false;}
+        document.loginfrm.submit();
+    }
+    function pop(){
+        window.open('signup.html','_blank','left=700,top=200,width=500,height=500',);
+    }
+    function pop2(){
+        window.open('id.html','_blank','left=700,top=200,width=500,height=500');
+    }
+    function pop3(){
+        window.open('idpw2.html','_blank','left=700,top=200,width=500,height=500');
+    }
+    
+</script>

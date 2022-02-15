@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BACKPACK</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png"></a>
+        </div>
+        <ul class="nav">
+            <li onclick="location.href='backpackmain.html'">Backpack Tour</li>
+            <li onclick="location.href='koreamain.html'">Trip To Korea</li>
+            <li onclick="location.href='euromain.html'">Trip To Europe</li>
+        </ul>
+    <div id="modalwindow">
+        <input type="checkbox" id="login" class="checkbox">
+        <label for="login" class="login_text">Login<img src="images/login2.png"style="width:45px; height:45px;"></label>
+        <div class="loginwrap">
+        <div class="loginmain">
+            <label for="login" class="loginclose">X</label>
+            <div id="login">
+                <form name="loginfrm" method="post" action="">
+                    <table class="logintable">
+                        <tr>
+                            <td colspan="3">
+                                <img src="images/logo.png">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="text" class="logintable_t"
+                                 placeholder="ID또는 E-mail계정을 입력해주세요." name="usid">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="password" class="logintable_t"
+                                placeholder="비밀번호를 입력해주세요." name="uspw">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="button" class="login_bt"
+                                value="Login" onclick="login()">
+                            </td>
+                        </tr>
+                        <tr class="login_sub">
+                            <td onclick="pop()">회원 가입</td>
+                            <td onclick="pop2()">계정 찾기</td>
+                            <td onclick="pop3()">비밀번호 찾기</td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <label for="login" class="loginback"></label>
+        </div>
+    </div>
+</header>
+    <div id="germany">
+        <div class="main_img">
+            <img src="images/germany_text.png">
+        </div>
+        <p class="main_text2">오랜 역사와 전통 문화가 조화롭게 어우러진<br>
+            유렵의 선구자 
+            <span style="font-size: 45px; color: rgba(252, 189, 55, 0.815);">독일</span>로
+            <span style="font-size: 55px; color: rgba(255, 133, 19, 0.815);">함께 떠나자!</span>
+            
+        </p>
+    </div>
+    <div id="middle_2">
+        <div class="middle_wrap_2">
+            <div class="mini_menu">HOME > EUROPE  > GERMANY</div>
+        </div>
+    </div>
+    <div id="content" style="height:120px">
+        <div class="box4">
+            <div class="box1">
+                * BACKPACK TOUR * 가 추천하는 독일여행
+            </div><!--con_end-->
+        </div>
+    </div>
+    <br>
+    <div id="content_3">
+        <div class="con3_title"> 퓌센 노이슈반 슈타인성(Neuschwanstein Castle)</div>
+        <div class="con3_box">
+            <div class="con3_box1">
+                <div class="con3_img">
+                    <img src="images/tour_g1.jpg">
+                </div>
+            </div>
+            <div class="con3_box1">
+                <ul class="con3_text">
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">디즈니랜드 신데랄라 성의 모태</li>
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">백조의 성이라 불리는 노이슈반 슈타인!</li>
+                    <br>
+                    <h3 style="color: rgb(68, 67, 67);">#노이슈반 슈타인 관람 정보</h3>
+                    <li style="color: gray;">- 입장료 : 입장료 13유로, +호엔슈방가우 패키지 입장료 25유로</li>
+                    <li style="color: gray;">   *18세 미만 어린이 및 청소년 무료</li>
+                    <li style="color: gray;">- 운영시간 : 오전 09:00 ~ 오후 06:00</li>
+                    <li style="color: gray;">- 주소지 : Neuschwansteinstraße 20, 87645 Schwangau, Germany</li>
+                    <li style="color: gray;">- 웹사이트 :  http://fjellheisen.no/en/</li>
+                    <li style="color: gray;">- 문의전화 : +49-8362-930830</li>
+                </ul>
+            </div>
+        </div>
+    </div><!--content1_end-->
+    <br>
+    <br>
+    <div id="content_3">
+        <div class="con3_title">베를린 박물관섬(Museum Island Berlin)</div>
+        <div class="con3_box">
+            <div class="con3_box1">
+                <div class="con3_img">
+                    <img src="images/tour_g2.jpg">
+                </div>
+            </div>
+            <div class="con3_box1">
+                <ul class="con3_text">
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">독일의 주요 박물관을 한번에!?</li>
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">놓칠 수 없는 패키지, 지금 당장 떠나요</li>
+                    <br>
+                    <h3 style="color: rgb(68, 67, 67);">#박물관섬 관광 정보</h3>
+                    <li style="color: gray;">- 입장료 : 72시간 패키지 이용 기준 204.90유로</li>
+                    <li style="color: gray;">   *만 6세 15세의 어린이는 최대 3명까지 무료 동행 가능</li>
+                    <li style="color: gray;">- 주소지 : Museum Island (Bodestrasse) 10178 Berlin</li>
+                    <li style="color: gray;">- 웹사이트 : https://www.skiforeningen.no/holmenkollen</li>
+                    <li style="color: gray;">- 문의전화 : +49-30-266424242</li>
+                </ul>
+            </div>
+        </div>
+    </div><!--content2_end-->
+    <br>
+    <br>
+    <div class="guide_icon"onclick="location.href='reservation_edguo.html'"></div>
+    <div id="content_3">
+        <div class="con3_title">쾰른 대성당(Cologne Cathedral)</div>
+        <div class="con3_box">
+            <div class="con3_box1">
+                <div class="con3_img">
+                    <img src="images/tour_g3.jpg">
+                </div>
+            </div>
+            <div class="con3_box1">
+                <ul class="con3_text">
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">건축물을 넘어선 하나의 작품</li>
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">완공 시간만 무려 6세기, 고딕 양식의 걸작!!</li>
+                    <br>
+                    <h3 style="color: rgb(68, 67, 67);">#쾰른 대성당 관광 정보</h3>
+                    <li style="color: gray;">- 입장료 : 무료</li>
+                    <li style="color: gray;">  *단 미사 진행시간은 입장제한</li>
+                    <li style="color: gray;">- 주소지 : Domkloster 4, 50667 Köln, Germany</li>
+                    <li style="color: gray;">- 문의전화 : +49-221-49-17940555</li>
+                </ul>
+            </div>
+        </div>
+    </div><!--content3_end-->
+    <footer>
+        <div id="footer_wrap">
+            <div class="footer_box"style="display: flex;">
+                <p onclick="location.href='refund2.html'"> 취소 환불 규정</p>
+                <p onclick="location.href='emailban.html'">이메일무단수집거부</p>
+                <p onclick="location.href='policy.html'">개인정보처리방침</p>
+            </div>
+            <div class="footer_box">
+                <p >상호명:BACKPACK TOUR</p>
+                <p>대표자:김가방</p>
+                <p>개인정보책임자:정주머니</p>
+                <p>상담전화:1234-5678</p>
+                <p>주소: 대한민국 부산광역시 아버지구 가방에들어가신다.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+<script>
+    function send(){
+        if(frm1.departure.value==""){alert("출발지을 지정하세요");frm1.departure.focus();return false;}
+        if(frm1.destination.value==""){alert("도착지을 지정하세요");frm1.destination.focus(); return false;}
+        if(frm1.date1.value==""){alert("출발일을 지정하세요");frm1.date1.focus();return false;}
+        if(frm1.date2.value==""){alert("도착일을 지정하세요");frm1.date2.focus(); return false;}
+        document.frm1.submit();
+    }
+    function login(){
+        if(loginfrm.usid.value==""){alert("ID또는 E-mail계정을 입력하세요.");loginfrm.usid.focus(); return false;}
+        if(loginfrm.uspw.value==""){alert("비밀번호를 입력하세요.");loginfrm.uspw.focus(); return false;}
+        document.loginfrm.submit();
+    }
+    function pop(){
+        window.open('signup.html','_blank','left=700,top=200,width=500,height=500',);
+    }
+    function pop2(){
+        window.open('id.html','_blank','left=700,top=200,width=500,height=500');
+    }
+    function pop3(){
+        window.open('idpw2.html','_blank','left=700,top=200,width=500,height=500');
+    }
+    
+</script>

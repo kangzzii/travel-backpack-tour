@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BACKPACK</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png"></a>
+        </div>
+        <ul class="nav">
+            <li onclick="location.href='backpackmain.html'">Backpack Tour</li>
+            <li onclick="location.href='koreamain.html'">Trip To Korea</li>
+            <li onclick="location.href='euromain.html'">Trip To Europe</li>
+        </ul>
+    <div id="modalwindow">
+        <input type="checkbox" id="login" class="checkbox">
+        <label for="login" class="login_text">Login<img src="images/login2.png"style="width:45px; height:45px;"></label>
+        <div class="loginwrap">
+        <div class="loginmain">
+            <label for="login" class="loginclose">X</label>
+            <div id="login">
+                <form name="loginfrm" method="post" action="">
+                    <table class="logintable">
+                        <tr>
+                            <td colspan="3">
+                                <img src="images/logo.png">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="text" class="logintable_t"
+                                 placeholder="ID또는 E-mail계정을 입력해주세요." name="usid">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="password" class="logintable_t"
+                                placeholder="비밀번호를 입력해주세요." name="uspw">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="button" class="login_bt"
+                                value="Login" onclick="login()">
+                            </td>
+                        </tr>
+                        <tr class="login_sub">
+                            <td onclick="pop()">회원 가입</td>
+                            <td onclick="pop2()">계정 찾기</td>
+                            <td onclick="pop3()">비밀번호 찾기</td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <label for="login" class="loginback"></label>
+        </div>
+    </div>
+</header>
+   <div id="musicmain">
+       <div class="backpack_title"> WELCOME TO<br> BACKPACK TOUR </div>
+   </div>
+   <div id="backpack_content" style="height: 150px;">
+        <div class="koreacontent_title">
+            <span style="font-weight: bold;font-size: 1.4em;">여러분의 여행을 BACKPACK TOUR와  함께하세요<br></span>
+            <a href="index.html"> Home</a>> <a href="backpackmain.html">BACKPACK TOUR</a> > <a  style="font-weight: bold;" href="music1.html">PLAYLIST</a>
+        </div>
+    </div>
+   <div id="corona">
+    <ul class="prepare_nav"style="width:1200px;">
+        <li onclick="location.href='music1.html'">국내여행 playlist</li>
+        <li onclick="location.href='music2.html'"style="background:linear-gradient(to left,#263c8b,goldenrod);color:white;"> 해외여행 playlist</li>
+    </ul>
+   </div>
+   <div class="koreacontent_title" style="margin-top: 30px;">
+    <span style="font-weight: bold;font-size: 1.4em;">BACKPACK TOUR가 추천하는 해외여행 Playlist<br></span>
+    </div>
+   <div id="music">
+        <div class="music_b">
+            <img src="images/argentinamusic.png">
+            <p>전문적인 공연을 보지 못했더라도<br> 
+                여러 영화를 통해 확인할 수 있었던 이 장면은<br>
+               <span style="font-weight: bold;color: #7e0000;"> 아르헨티나를 대표하는 춤이자 음악인 탱고</span>의 무대 모습입니다.<br>
+             <span style="text-decoration: underline;">찌든 삶을 살아갈 수밖에 없었던 항구도시 이민자들이<br>
+             그 격정적인 감정을 춤과 음악으로 분출했던 탱고</span>는<br>
+              스페인의 플라멩코와 함께 가장 인상적인 예술로 손꼽히기도 합니다.<br>
+            특히 그 춤이 보여주는 유일무이한 매력으로 인해 “네 다리 사이의 예술”로 불리기도 합니다.</p>
+            <iframe width="600" height="300"style="border-radius:10px;border:none; margin-top:50px " src="https://www.youtube.com/embed/pYrYYGTv_WI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br>
+            태생적으로 지닌 격정적인 감성과 <br>
+            강렬한 리듬으로 인해 “치명적인 유혹”이라는 표현이 쓰일 정도로 듣는 사람을 사로잡는 탱고,<br>
+            그 거부하기 힘든 매력의 세계로 BACKPACKTOUR가 안내합니다.<br>
+                <input type="button" value="Trip to Europe" onclick="location.href='euromain.html'" class="music_fast">
+        </div>
+    </div>
+    <div id="music" style="margin-top: 100px; margin-bottom: 50px;">
+        <div class="music_b">
+            <img src="images/francemusic.png">
+            <p> <span style="font-weight: bold;">예술가들의 천국으로 불리는 프랑스.</span> <br>
+                폭넓고 깊이 있는 예술 문화의 전통이 이어져 온 프랑스의 아름다운 문화유산 중 하나로 <br>
+                그들의 노래 샹송(Chanson)을 빼놓을 수 없습니다.<br>
+                샹송은 독특한 개성과 멋을 지닌 세상의 모든 음악들 가운데<br>
+                <span style="color: #7e0000;">예술적인 우아함과 대중적인 기호를 동시에 갖춘 것으로</span> <br>손꼽을 수 있습니다<br>
+                <img src="images/chanson.jpg">
+                <br>
+                “프랑스 사람들처럼 아름다운 노래를 가진 국민은 없다.”는 볼테르(Voltaire)의 말처럼<br>
+                샹송은 프랑스 사람들에게 커다란 자부심을 안겨 주었고, <br>
+                비영어권 지역까지 널리 퍼지기도 하였습니다.
+                샹송의 매력속으로 BACKPACKTOUR와 함께 떠나 보실까요?<br>
+                <input type="button" value="Trip to France" onclick="location.href='france.html'" class="music_fast">
+        </div>
+   </div>
+   <footer>
+    <div id="footer_wrap">
+        <div class="footer_box"style="display: flex;">
+            <p onclick="location.href='refund2.html'"> 취소 환불 규정</p>
+            <p onclick="location.href='emailban.html'">이메일무단수집거부</p>
+            <p onclick="location.href='policy.html'">개인정보처리방침</p>
+        </div>
+        <div class="footer_box">
+            <p >상호명:BACKPACK TOUR</p>
+            <p>대표자:김가방</p>
+            <p>개인정보책임자:정주머니</p>
+            <p>상담전화:1234-5678</p>
+            <p>주소: 대한민국 부산광역시 아버지구 가방에들어가신다.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+<script>
+    function send(){
+        if(frm1.departure.value==""){alert("출발지을 지정하세요");frm1.departure.focus();return false;}
+        if(frm1.destination.value==""){alert("도착지을 지정하세요");frm1.destination.focus(); return false;}
+        if(frm1.date1.value==""){alert("출발일을 지정하세요");frm1.date1.focus();return false;}
+        if(frm1.date2.value==""){alert("도착일을 지정하세요");frm1.date2.focus(); return false;}
+        document.frm1.submit();
+    }
+    function login(){
+        if(loginfrm.usid.value==""){alert("ID또는 E-mail계정을 입력하세요.");loginfrm.usid.focus(); return false;}
+        if(loginfrm.uspw.value==""){alert("비밀번호를 입력하세요.");loginfrm.uspw.focus(); return false;}
+        document.loginfrm.submit();
+    }
+    function pop(){
+        window.open('signup.html','_blank','left=700,top=200,width=500,height=500',);
+    }
+    function pop2(){
+        window.open('id.html','_blank','left=700,top=200,width=500,height=500');
+    }
+    function pop3(){
+        window.open('idpw2.html','_blank','left=700,top=200,width=500,height=500');
+    }
+    
+</script>

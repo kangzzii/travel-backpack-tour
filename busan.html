@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BACKPACK"GYEONGSANGDO"</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png"></a>
+        </div>
+        <ul class="nav">
+            <li onclick="location.href='backpackmain.html'">Backpack Tour</li>
+            <li onclick="location.href='koreamain.html'">Trip To Korea</li>
+            <li onclick="location.href='euromain.html'">Trip To Europe</li>
+        </ul>
+    <div id="modalwindow">
+        <input type="checkbox" id="login" class="checkbox">
+        <label for="login" class="login_text">Login<img src="images/login2.png"style="width:45px; height:45px;"></label>
+        <div class="loginwrap">
+        <div class="loginmain">
+            <label for="login" class="loginclose">X</label>
+            <div id="login">
+                <form name="loginfrm" method="post" action="">
+                    <table class="logintable">
+                        <tr>
+                            <td colspan="3">
+                                <img src="images/logo.png">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="text" class="logintable_t"
+                                 placeholder="ID또는 E-mail계정을 입력해주세요." name="usid">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="password" class="logintable_t"
+                                placeholder="비밀번호를 입력해주세요." name="uspw">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="button" class="login_bt"
+                                value="Login" onclick="login()">
+                            </td>
+                        </tr>
+                        <tr class="login_sub">
+                            <td onclick="pop()">회원 가입</td>
+                            <td onclick="pop2()">계정 찾기</td>
+                            <td onclick="pop3()">비밀번호 찾기</td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <label for="login" class="loginback"></label>
+        </div>
+    </div>
+</header>
+<div style="padding-bottom: 100px;">
+    <div id="busan">
+        <div class="main_img">
+            <img src="images/busan_text.png">
+        </div>
+        <p class="main_text2">'오이소~사이소~신나게 즐기고 가이소'<br>
+            다이나믹한 도시!!<span style="font-size: 55px; color: rgb(88, 225, 243);">살아있네~경상도!!</span>부산&대구
+        </p>
+    </div>
+    <div id="middle_2">
+        <div class="middle_wrap_2">
+            <div class="mini_menu">홈 > 경상도 > 부산&대구여행정보</div>
+        </div>
+    </div>
+    <div id="content" style="height:120px">
+        <div class="box4">
+            <div class="box1">
+                * BACKPACK TOUR * 가 추천하는 부산&대구여행(경상남도/경상북도)
+            </div><!--con_end-->
+        </div>
+    </div>
+    <br>
+    <div id="content_3">
+        <div class="con3_title">송도 해상케이블카(부산)</div>
+        <div class="con3_box">
+            <div class="con3_box1">
+                <div class="con3_img">
+                    <img src="images/tour1.jpg">
+                </div>
+            </div>
+            <div class="con3_box1">
+                <ul class="con3_text">
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">바다위의 짜릿한 경험</li>
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">파란 가득 부산의 풍경을 한눈에!</li>
+                    <br>
+                    <h3 style="color: rgb(68, 67, 67);">#송도해상케이블카 정보</h3>
+                    <li style="color: gray;">- 운영시간 : 주중 9~20시, 주말(공휴일) 9~21시</li>
+                    <li style="color: gray;">   ＊매표마감 : 운영시간 마감 30분 전 </li>
+                    <li style="color: gray;">- 주소지 : 부산광역시 서구 송도 해변로 171</li>
+                    <li style="color: gray;">- 주차 : 송림주차장(서구 송대 해변로 171)</li>
+                    <li style="color: gray;">   ＊ 케이블카 이용시 주중 1시간, 주말/공휴일 2시간 무료</li>
+                    <li style="color: gray;"> - 문의전화 : 051-247-9900</li>
+                </ul>
+            </div>
+        </div>
+    </div><!--content1_end-->
+    <br>
+    <br>
+    <div id="content_3">
+        <div class="con3_title">팔공산 케이블카(대구)</div>
+        <div class="con3_box">
+            <div class="con3_box1">
+                <div class="con3_img">
+                    <img src="images/busan6.jpg">
+                </div>
+            </div>
+            <div class="con3_box1">
+                <ul class="con3_text">
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">사계절 항상 아름다운 팔공산!!</li>
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">사계절 마다 다른 풍경을 한눈에담아보자!!</li>
+                    <br>
+                    <h3 style="color: rgb(68, 67, 67);">#팔공산 케이블카 정보</h3>
+                    <li style="color: gray;">-왕복:대인11,000원/소인6,000원<br>-경로우대(만65세이상)9,000원/국가유공자&장애인5,500원</li>
+                    <li style="color: gray;">- 평일:09:30~18:00/주말:09:30~18:00/공휴일:09:30~18:00</li>
+                    <li style="color: gray;">- 주소지 : 대구 동구 팔공산로185길 51 팔공산케이블카</li>
+                    <li style="color: gray;">- 홈페이지 :<a href="https://blog.naver.com/palgongcable"> https://blog.naver.com/palgongcable</a></li>
+                    <li style="color: gray;"> - 문의전화 : 0507-1406-8801</li>
+                </ul>
+            </div>
+        </div>
+    </div><!--content2_end-->
+    <br>
+    <br>
+    <div id="content_3">
+        <div class="con3_title"> 시티투어버스(부산)</div>
+        <div class="con3_box">
+            <div class="con3_box1">
+                <div class="con3_img">
+                    <img src="images/tour2.jpg">
+                </div>
+            </div>
+            <div class="con3_box1">
+                <ul class="con3_text">
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">붕붕붕 알차게 부산 한바퀴</li>
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">짧은 시간안에 다양한 문화를 즐겨봐요</li>
+                    <br>
+                    <h3 style="color: rgb(68, 67, 67);">#부산시티투어버스 정보</h3>
+                    <li style="color: gray;">- 부산시티투어버스 제휴할인</li>
+                    <li style="color: gray;">- 정기휴무 : 매주 월요일, 화요일</li>
+                    <li style="color: gray;">- 주소지 : 부산광역시 서구 송도 해변로 171</li>
+                    <li style="color: gray;">- 홈페이지 : http://www.citytourbusan.com/ko/00main/main.php</li>
+                    <li style="color: gray;"> - 문의전화 : 051-456-9988</li>
+                </ul>
+            </div>
+        </div>
+    </div><!--content2_end-->
+    <br>
+    <br>
+    <div id="content_3">
+        <div class="con3_title">국립대구과학관(대구)</div>
+        <div class="con3_box">
+            <div class="con3_box1">
+                <div class="con3_img">
+                    <img src="images/busan4.jpg">
+                </div>
+            </div>
+            <div class="con3_box1">
+                <ul class="con3_text">
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">온가족이 함께 즐기는 곳!</li>
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">무한한 상상력&다양한 체험을 통한 성취감</li>
+                    <br>
+                    <h3 style="color: rgb(68, 67, 67);">#국립대구과학관 정보</h3>
+                    <li style="color: gray;">-상설전시관:대인3,000원/소인2,000원/유아&우대 무료<br>
+                                               -4D영상관/천체투영관:대2,000원/소,유아,우대1,000원</li>
+                    <li style="color: gray;">-매일09:30~17:30(입장종료16:30)/월요일휴무(명절휴관)</li>
+                    <li style="color: gray;">- 주소지 : 대구 달성군 유가읍 테크노대로6길 20</li>
+                    <li style="color: gray;">- 홈페이지 :<a href="http://www.dnsm.or.kr/"> http://www.dnsm.or.kr/</a></li>
+                    <li style="color: gray;"> - 문의전화 : 053-670-6114</li>
+                </ul>
+            </div>
+        </div>
+    </div><!--content2_end-->
+    <br>
+    <br>
+    <div class="guide_icon" onclick="location.href='reservation_busan.html'"></div>
+    <div id="content_3">
+        <div class="con3_title">광안리 불꽃놀이(부산)</div>
+        <div class="con3_box">
+            <div class="con3_box1">
+                <div class="con3_img">
+                    <img src="images/tour3.jpg">
+                </div>
+            </div>
+            <div class="con3_box1">
+                <ul class="con3_text">
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">아름다운 부산 밤하늘의 하모니,</li>
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">모두를 감싸주는 가을밤 불꽃과 함께</li>
+                    <br>
+                    <h3 style="color: rgb(68, 67, 67);">#광안리 불꽃놀이 정보</h3>
+                    <li style="color: gray;">- 축제기간 : 매년 11월 불꽃쇼 20:00 ~ 21:00</li>
+                    <li style="color: gray;">   ＊이용요금 : 무료 (유료좌석 구매별도) </li>
+                    <li style="color: gray;">- 주소지 : 부산광역시 수영구 광안해변로 219</li>
+                    <li style="color: gray;">- 주차 : 인근 공영주차장(유료)</li>
+                    <li style="color: gray;">   ＊ 교통정보 : 도시철도2호선 광안역 5번출구 버스 41,42</li>
+                    <li style="color: gray;"> - 문의전화 : 051-506-6051</li>
+                </ul>
+            </div>
+        </div>
+    </div><!--content3_end-->
+    <br>
+    <br>
+    <div id="content_3">
+        <div class="con3_title">김광석다시그리기길(대구)</div>
+        <div class="con3_box">
+            <div class="con3_box1">
+                <div class="con3_img">
+                    <img src="images/busan7.jpg">
+                </div>
+            </div>
+            <div class="con3_box1">
+                <ul class="con3_text">
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">한국인이 사랑하는 가수'김광석'</li>
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">350m 길이의 벽면을 따라 김광석 조형물<br>
+                                                                            가슴을 흔드는 그의 노래&노랫말 가득히~!</li>
+                    <br>
+                    <h3 style="color: rgb(68, 67, 67);">#김광석다시그리기길 정보</h3>
+                    <li style="color: gray;">-도보코스:수성교↔송죽미용실(총거리 358m)/그외볼거리</li>
+                    <li style="color: gray;">-방천시장/주차유료</li>
+                    <li style="color: gray;">- 주소지 : 대구 중구 대봉동 6-11</li>
+                    <li style="color: gray;">- 홈페이지 :<a href="https://www.kimkwangseok.or.kr/">https://www.kimkwangseok.or.kr/</a></li>
+                    <li style="color: gray;"> - 문의전화 : 053-218-1053</li>
+                    <li style="color: gray;">-방천시장/동성로:'김광석노래 경연대회'(매년가을주체)</li>                 
+                </ul>
+            </div>
+        </div>
+    </div><!--content2_end-->
+    </div>
+    <footer>
+        <div id="footer_wrap">
+            <div class="footer_box"style="display: flex;">
+                <p onclick="location.href='refund2.html'"> 취소 환불 규정</p>
+                <p onclick="location.href='emailban.html'">이메일무단수집거부</p>
+                <p onclick="location.href='policy.html'">개인정보처리방침</p>
+            </div>
+            <div class="footer_box">
+                <p >상호명:BACKPACK TOUR</p>
+                <p>대표자:김가방</p>
+                <p>개인정보책임자:정주머니</p>
+                <p>상담전화:1234-5678</p>
+                <p>주소: 대한민국 부산광역시 아버지구 가방에들어가신다.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+<script>
+    function send(){
+        if(frm1.departure.value==""){alert("출발지을 지정하세요");frm1.departure.focus();return false;}
+        if(frm1.destination.value==""){alert("도착지을 지정하세요");frm1.destination.focus(); return false;}
+        if(frm1.date1.value==""){alert("출발일을 지정하세요");frm1.date1.focus();return false;}
+        if(frm1.date2.value==""){alert("도착일을 지정하세요");frm1.date2.focus(); return false;}
+        document.frm1.submit();
+    }
+    function login(){
+        if(loginfrm.usid.value==""){alert("ID또는 E-mail계정을 입력하세요.");loginfrm.usid.focus(); return false;}
+        if(loginfrm.uspw.value==""){alert("비밀번호를 입력하세요.");loginfrm.uspw.focus(); return false;}
+        document.loginfrm.submit();
+    }
+    function pop(){
+        window.open('signup.html','_blank','left=700,top=200,width=500,height=500',);
+    }
+    function pop2(){
+        window.open('id.html','_blank','left=700,top=200,width=500,height=500');
+    }
+    function pop3(){
+        window.open('idpw2.html','_blank','left=700,top=200,width=500,height=500');
+    }
+    
+</script>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BACKPACK</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png"></a>
+        </div>
+        <ul class="nav">
+            <li onclick="location.href='backpackmain.html'">Backpack Tour</li>
+            <li onclick="location.href='koreamain.html'">Trip To Korea</li>
+            <li onclick="location.href='euromain.html'">Trip To Europe</li>
+        </ul>
+    <div id="modalwindow">
+        <input type="checkbox" id="login" class="checkbox">
+        <label for="login" class="login_text">Login<img src="images/login2.png"style="width:45px; height:45px;"></label>
+        <div class="loginwrap">
+        <div class="loginmain">
+            <label for="login" class="loginclose">X</label>
+            <div id="login">
+                <form name="loginfrm" method="post" action="">
+                    <table class="logintable">
+                        <tr>
+                            <td colspan="3">
+                                <img src="images/logo.png">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="text" class="logintable_t"
+                                 placeholder="ID또는 E-mail계정을 입력해주세요." name="usid">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="password" class="logintable_t"
+                                placeholder="비밀번호를 입력해주세요." name="uspw">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="button" class="login_bt"
+                                value="Login" onclick="login()">
+                            </td>
+                        </tr>
+                        <tr class="login_sub">
+                            <td onclick="pop()">회원 가입</td>
+                            <td onclick="pop2()">계정 찾기</td>
+                            <td onclick="pop3()">비밀번호 찾기</td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <label for="login" class="loginback"></label>
+        </div>
+    </div>
+</header>
+    <div id="italy">
+        <div class="main_img">
+            <img src="images/italy_text.png">
+        </div>
+        <p class="main_text2">낭만을 찾으신다면, 이곳으로..<br>
+            매혹적이고 로맨틱한 운하를 가진
+            <span style="font-size: 55px; color: rgba(78, 251, 121, 0.815);">이</span>
+            <span style="font-size: 55px; color: rgb(255, 255, 255);">테</span>
+            <span style="font-size: 55px; color: rgb(253, 36, 36);">리</span>로..
+        </p>
+    </div>
+    <div id="middle_2">
+        <div class="middle_wrap_2">
+            <div class="mini_menu">HOME > EUROPE  > ITALY</div>
+        </div>
+    </div>
+    <div id="content" style="height:120px">
+        <div class="box4">
+            <div class="box1">
+                * BACKPACK TOUR * 가 추천하는 이테리여행 
+            </div><!--con_end-->
+        </div>
+    </div>
+    <br>
+    <div id="content_3">
+        <div class="con3_title">로마 콜로세움(Colosseum)</div>
+        <div class="con3_box">
+            <div class="con3_box1">
+                <div class="con3_img">
+                    <img src="images/tour_i1.jpg">
+                </div>
+            </div>
+            <div class="con3_box1">
+                <ul class="con3_text">
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">고대 로마의 원형경기장</li>
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">그 역사의 중심으로 들어가다</li>
+                    <br>
+                    <h3 style="color: rgb(68, 67, 67);">#콜로세움 관광 정보</h3>
+                    <li style="color: gray;">- 입장료 : 포로로마노/콜로세움/팔라티노 언덕 포함(2일권) 12유로</li>
+                    <li style="color: gray;">   *(각각 따로 구입불가)</li>
+                    <li style="color: gray;">- 입장시간 : 오전 8:30 ~ 오후 07:00</li>
+                    <li style="color: gray;">- 주소지 : Piazza del Colosseo, 1, 00184 Roma RM, Italy</li>
+                    <li style="color: gray;">- 웹사이트 :  http://www.il-colosseo.it/</li>
+                    <li style="color: gray;">- 문의전화 : +39-06-39967700</li>
+                </ul>
+            </div>
+        </div>
+    </div><!--content1_end-->
+    <br>
+    <br>
+    <div id="content_3">
+        <div class="con3_title">피렌체 아카데미아 미술관(Accademia Gallery)</div>
+        <div class="con3_box">
+            <div class="con3_box1">
+                <div class="con3_img">
+                    <img src="images/tour_i2.jpg">
+                </div>
+            </div>
+            <div class="con3_box1">
+                <ul class="con3_text">
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">르네상스의 명작을 한눈에!</li>
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">미켈란젤로의 다비드가 있는 바로 그 곳!</li>
+                    <br>
+                    <h3 style="color: rgb(68, 67, 67);">#아카데미아 미술관 정보</h3>
+                    <li style="color: gray;">- 입장료 : 일부구역 무료, 가이드투어 20~100 AD</li>
+                    <li style="color: gray;">- 입장시간 : 연중무휴</li>
+                    <li style="color: gray;">- 주소지 : Bennelong Point Sydney NSW 2000 Australia</li>
+                    <li style="color: gray;">- 웹사이트 : http://www.sydneyoperahouse.com</li>
+                    <li style="color: gray;">- 문의전화 : +61-2-66-9250-7777</li>
+                </ul>
+            </div>
+        </div>
+    </div><!--content2_end-->
+    <br>
+    <br>
+    <div class="guide_icon" onclick="location.href='reservation_italy.html'"></div>
+    <div id="content_3">
+        <div class="con3_title">밀라노 셈피오네 공원(Parco Sempione)</div>
+        <div class="con3_box">
+            <div class="con3_box1">
+                <div class="con3_img">
+                    <img src="images/tour_i3.jpg">
+                </div>
+            </div>
+            <div class="con3_box1">
+                <ul class="con3_text">
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">가족 연인 친구들 </li>
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">그 누구와도 평안한 한때를..</li>
+                    <br>
+                    <h3 style="color: rgb(68, 67, 67);">#관광 정보</h3>
+                    <li style="color: gray;">- 입장료 : 없음</li>
+                    <li style="color: gray;">- 운영 시간 : 화요일 ~ 일요일 09:00 ~ 17:30</li>
+                    <li style="color: gray;">   *추천 관광시간 : 1 ~ 2시간</li>
+                    <li style="color: gray;">- 주소지 : Piazza Sempione, 20154 Milan, Italy</li>
+                    <li style="color: gray;">- 문의전화 : +39-02-8846-7383</li>
+                </ul>
+            </div>
+        </div>
+    </div><!--content3_end-->
+    <footer>
+        <div id="footer_wrap">
+            <div class="footer_box"style="display: flex;">
+                <p onclick="location.href='refund2.html'"> 취소 환불 규정</p>
+                <p onclick="location.href='emailban.html'">이메일무단수집거부</p>
+                <p onclick="location.href='policy.html'">개인정보처리방침</p>
+            </div>
+            <div class="footer_box">
+                <p >상호명:BACKPACK TOUR</p>
+                <p>대표자:김가방</p>
+                <p>개인정보책임자:정주머니</p>
+                <p>상담전화:1234-5678</p>
+                <p>주소: 대한민국 부산광역시 아버지구 가방에들어가신다.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+<script>
+    function send(){
+        if(frm1.departure.value==""){alert("출발지을 지정하세요");frm1.departure.focus();return false;}
+        if(frm1.destination.value==""){alert("도착지을 지정하세요");frm1.destination.focus(); return false;}
+        if(frm1.date1.value==""){alert("출발일을 지정하세요");frm1.date1.focus();return false;}
+        if(frm1.date2.value==""){alert("도착일을 지정하세요");frm1.date2.focus(); return false;}
+        document.frm1.submit();
+    }
+    function login(){
+        if(loginfrm.usid.value==""){alert("ID또는 E-mail계정을 입력하세요.");loginfrm.usid.focus(); return false;}
+        if(loginfrm.uspw.value==""){alert("비밀번호를 입력하세요.");loginfrm.uspw.focus(); return false;}
+        document.loginfrm.submit();
+    }
+    function pop(){
+        window.open('signup.html','_blank','left=700,top=200,width=500,height=500',);
+    }
+    function pop2(){
+        window.open('id.html','_blank','left=700,top=200,width=500,height=500');
+    }
+    function pop3(){
+        window.open('idpw2.html','_blank','left=700,top=200,width=500,height=500');
+    }
+</script>

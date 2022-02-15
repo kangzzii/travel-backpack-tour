@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BACKPACK TOUR LOGIN</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="usid">
+        <div class="idpw_main">
+            <img src="images/idpw.png">
+        </div>
+        <ul class="idpw_nav">
+            <li onclick="location.href='id.html'"style="background-color: #263c8b;color: white">계정찾기</li>
+            <li onclick="location.href='idpw2.html'">비밀번호 찾기</li>
+        </ul>
+        <form name="frm1" method="post" action="loginok.html">
+        <table class="idpw_table">
+            <tr>
+                <td>이름</td>
+                <td><input type="text" style="width: 70vmin;" name="usname"
+                    class="idpw_text" placeholder="  가입하실때 기입하신 성함을 적어주세요"></td>
+            </tr>
+            <tr>
+                <td>휴대폰번호</td>
+                <td><input type="tel" class="idpw_text" name="ustel"
+                    placeholder="  전화번호를 입력해주세요">
+                    <input type="button" value="인증번호받기" class="idpw_bt">
+                </td>
+            </tr>
+            <tr>
+                <td>인증번호</td>
+                <td><input type="tel" class="idpw_text" name="uscheck"
+                    placeholder="  인증번호를 입력해주세요">
+                    <input type="button" value="인증하기"class="idpw_bt">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="button" onclick="send()" value="계정찾기"class="idpw_bt2" >
+                    <input type="reset" style="margin-top: 10px;margin-left: 3vmin;background-color: #5a0000;"value="다시작성"class="idpw_bt3">
+                </td>
+            </tr>
+        </table>
+    </form>
+    </div>
+</body>
+</html>
+<script>
+    function send(){
+        
+        if(frm1.usname.value==""){alert("이름을 입력하세요");frm1.usname.focus();return false;}
+        if(frm1.ustel.value==""){alert("전화번호를 입력하세요");frm1.ustel.focus();return false;}
+        if(frm1.uscheck.value==""){alert("인증번호를 입력하세요");frm1.uscheck.focus();return false;}
+        {window.close();}
+    }
+    
+   
+</script>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BACKPACK TOUR LOGIN</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="signup">
+        <div class="signup_main">
+            <img src="images/signup.jpg">
+            <p class="signup_maintext">이제, 당신의 여행은 <br>BACKPACK TOUR가 책임집니다</p>
+        </div>
+        <div class="signup_text">&ensp;<img src="images/signup.png"> <span style="font-weight: bold;">&ensp;회원가입</span></div>
+        <div class="signup_content">
+            <form style="margin-top: 20px;"name="frm1" method="post" action="">
+                
+                <input type="text" name="usid" style="border: 1px solid orange;"
+                class="signup_us" placeholder="  ID 혹은 E-mail 주소">
+                <input type="button" class="signup_bt1" value="중복확인"><br>
+                <input type="password" name="uspw" class="signup_uspw" placeholder="  비밀번호">
+                <input type="password" name="uspwc" class="signup_uspw" placeholder="  비밀번호 확인">
+                <input type="button" class="signup_bt1" value="중복확인"><br>
+                <input type="text" name="usname" 
+                class="signup_us" style="width: 37vmin;"
+                placeholder="  이름"> <input type="text" style="width: 37vmin;"
+                class="signup_us" placeholder=" 선택사항 ) 닉네임"><br>
+                <input type="tel" name="ustel" class="signup_us" style="width:55vmin ;"
+                 placeholder="  전화번호를 입력해주세요">
+                <input type="button" class="signup_bt1" 
+                style="width: 20vmin;"
+                value="인증번호 받기"><br>
+                <input type="text" name="uscheck" class="signup_us" placeholder="  인증번호를 입력해주세요">
+                <input type="button" class="signup_bt1"value="인증하기"><br>
+                <input type="button" value="회원가입" class="signup_bt3" onclick="send()">
+                <input type="reset" value="다시작성" 
+                style="background-color: #490000;" class="signup_bt2">
+                
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    function send(){
+        if(frm1.usid.value==""){alert("Email혹은 ID를 입력하세요"); frm1.usid.focus();return false;}
+        if(frm1.uspw.value==""){alert("비밀번호를 입력하세요");frm1.uspw.focus();return false;}
+        if(frm1.uspwc.value==""){alert("비밀번호 확인을 입력하세요");frm1.uspwc.focus();return false;}
+        if(frm1.usname.value==""){alert("이름을 입력하세요");frm1.usname.focus();return false;}
+        if(frm1.ustel.value==""){alert("전화번호를 입력하세요");frm1.ustel.focus();return false;}
+        if(frm1.uscheck.value==""){alert("인증번호를 입력하세요");frm1.uscheck.focus();return false;}
+        {window.close()}
+    }
+    function signup(){
+        window.open('signup.html','_self','width=500px,height="800px')
+    }
+</script>

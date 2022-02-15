@@ -1,0 +1,26 @@
+.checkbox{display: none;}
+.checkbox:checked{display: block;}
+.checkbox:checked .loginwrap{display: block;}
+input[id*="login"]:checked+label+div{display: block;}
+.loginwrap{width: 100%;height: 100%;
+        position: fixed;
+        display: none;
+        top:0;left: 0;
+        z-index: 100;}
+.loginmain{width: 500px;height: 500px;
+        position: absolute;
+        z-index: 2;
+        background-color: white;
+        top:50%;left: 50%;transform: translate(-50%,-50%);}
+.loginclose{border-radius: 100%;
+            position: absolute;
+            z-index: 1;
+            top: 0%;right: 0%;
+            padding: 20px;
+            transform: translate(40%,-40%);
+            background-color: red;}
+.loginback{width: 100%;height:100%;
+            position: absolute;
+            top: 0;left: 0%;
+            z-index: 1;
+            background-color: rgba(0, 0, 0, 0.584);}

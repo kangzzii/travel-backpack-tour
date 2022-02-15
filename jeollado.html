@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BACKPACK"JEOLLADO"</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png"></a>
+        </div>
+        <ul class="nav">
+            <li onclick="location.href='backpackmain.html'">Backpack Tour</li>
+            <li onclick="location.href='koreamain.html'">Trip To Korea</li>
+            <li onclick="location.href='euromain.html'">Trip To Europe</li>
+        </ul>
+    <div id="modalwindow">
+        <input type="checkbox" id="login" class="checkbox">
+        <label for="login" class="login_text">Login<img src="images/login2.png"style="width:45px; height:45px;"></label>
+        <div class="loginwrap">
+        <div class="loginmain">
+            <label for="login" class="loginclose">X</label>
+            <div id="login">
+                <form name="loginfrm" method="post" action="">
+                    <table class="logintable">
+                        <tr>
+                            <td colspan="3">
+                                <img src="images/logo.png">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="text" class="logintable_t"
+                                 placeholder="ID또는 E-mail계정을 입력해주세요." name="usid">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="password" class="logintable_t"
+                                placeholder="비밀번호를 입력해주세요." name="uspw">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="button" class="login_bt"
+                                value="Login" onclick="login()">
+                            </td>
+                        </tr>
+                        <tr class="login_sub">
+                            <td onclick="pop()">회원 가입</td>
+                            <td onclick="pop2()">계정 찾기</td>
+                            <td onclick="pop3()">비밀번호 찾기</td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <label for="login" class="loginback"></label>
+        </div>
+    </div>
+</header>
+<div style="padding-bottom: 100px;">
+    <div id="jeollado">
+        <div class="main_img">
+            <img src="images/do_text.png">
+        </div>
+        <p class="main_text2">'워메~싸게 싸게 와보랑껭~'<br>
+            전라북도&전라남도<span style="font-size: 55px; color: rgb(80, 253, 120);">두가지 문화권 즐기기</span>전라도
+        </p>
+    </div>
+    <div id="middle_2">
+        <div class="middle_wrap_2">
+            <div class="mini_menu">홈 > 전라도 > 전라도여행정보</div>
+        </div>
+    </div>
+    <div id="content" style="height:120px">
+        <div class="box4">
+            <div class="box1">
+                * BACKPACK TOUR * 가 추천하는 전라도(전라북도/전라남도)여행 
+            </div><!--con_end-->
+        </div>
+    </div>
+    <br>
+    <div id="content_3">
+        <div class="con3_title">순창 채계산 출렁다리(전라북도)</div>
+        <div class="con3_box">
+            <div class="con3_box1">
+                <div class="con3_img">
+                    <img src="images/do6.jpg">
+                </div>
+            </div>
+            <div class="con3_box1">
+                <ul class="con3_text">
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">한국에서 제일 긴 출렁다리</li>
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">풍요로운 들판을 보며 아찔하고 스릴을</li>
+                    <br>
+                    <h3 style="color: rgb(68, 67, 67);">#순창 채계산 출렁다리 정보</h3>
+                    <li style="color: gray;">- 운영시간 :연중무휴/기상에따라 다름</li>
+                    <li style="color: gray;">*흥미로운 유래를 느끼며 4계절 절경감상가능 </li>
+                    <li style="color: gray;">- 주소지 : 전북 순창군 적성면 괴정리</li>
+                    <li style="color: gray;">- 주차 :채계산출렁다리제2주차장(적성면 괴정리 1612)</li>
+                    <li style="color: gray;">   ＊계단으로 이루어진 등산로</li>
+                    <li style="color: gray;"> - 대중교통 :순창군 순창읍 남원삼거리 탑승가능</li>
+                </ul>
+            </div>
+        </div>
+    </div><!--content1_end-->
+    <br>
+    <br>
+    <div id="content_3">
+        <div class="con3_title">유월드 루지테마파크(전라남도)</div>
+        <div class="con3_box">
+            <div class="con3_box1">
+                <div class="con3_img">
+                    <img src="images/do5.jpg">
+                </div>
+            </div>
+            <div class="con3_box1">
+                <ul class="con3_text">
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">남녀노소 함께 소통하며 즐길수있는곳</li>
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">즐길거리 숙박&편리 한곳에서 하루를!!</li>
+                    <br>
+                    <h3 style="color: rgb(68, 67, 67);">#유월드 루지테마파크 정보</h3>
+                    <li style="color: gray;">- 부산시티투어버스 제휴할인</li>
+                    <li style="color: gray;">- 매일 10:00 - 19:00(09:50 발권시작)</li>
+                    <li style="color: gray;">- 주소지 : 전남 여수시 소라면 안심산길 155</li>
+                    <li style="color: gray;">- 홈페이지 :<a href="http://u-world.kr/"> http://u-world.kr/(인스타/페이스북 검색가능)</a></li>
+                    <li style="color: gray;">-올데이콤보(루지3회권 + 놀이공원 빅10 + 키즈파크)31,900원
+                                               <br>-가격문의 :(홈페이지참고)</li>
+                    <li style="color: gray;"> - 문의전화 : 061-810-6000</li>
+                </ul>
+            </div>
+        </div>
+    </div><!--content2_end-->
+    <br>
+    <br>
+    <div class="guide_icon"onclick="location.href='reservation_jeollado.html'"></div>
+    <div id="content_3">
+        <div class="con3_title">전주시 팔복예술공장(전라북도)</div>
+        <div class="con3_box">
+            <div class="con3_box1">
+                <div class="con3_img">
+                    <img src="images/do7.jpg">
+                </div>
+            </div>
+            <div class="con3_box1">
+                <ul class="con3_text">
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">문화체육관광부의 지원!폐산업시설을 재생!</li>
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">여긴~"전국 제1호"예술공간&복합문화시설</li>
+                    <br>
+                    <h3 style="color: rgb(68, 67, 67);">#전주시 팔복예술공장 정보</h3>
+                    <li style="color: gray;">- 개인&단체견학 가능함(자세한사항은 홈페이지참고)</li>
+                    <li style="color: gray;"> ＊매일 10:00 - 18:00전시장 (입장마감 17:30)<br>
+                                                  *매일 10:00 - 19:00카페써니/매일 11:30 - 14:30써니부엌<br>
+                                                  #월요일 휴무설,추석 당일 휴무 </li>
+                    <li style="color: gray;">- 주소지 : 전북 전주시 덕진구 구렛들1길 46</li>
+                    <li style="color: gray;">- 홈페이지 :<a href="http://www.palbokart.kr/"> http://www.palbokart.kr/(인스타/페이스북검색)</a></li>
+                    <li style="color: gray;"> - 문의전화 : 063-211-0288</li>
+                </ul>
+            </div>
+        </div>
+    </div><!--content3_end--><br><br>
+    <div id="content_3">
+        <div class="con3_title">담양읍 메타프로방스(전라남도)</div>
+        <div class="con3_box">
+            <div class="con3_box1">
+                <div class="con3_img">
+                    <img src="images/do8.jpg">
+                </div>
+            </div>
+            <div class="con3_box1">
+                <ul class="con3_text">
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">담양속 아름다운 유럽마을!</li>
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">메타세쿼이아 가로수길과 가까워 1석2조!</li>
+                    <br>
+                    <h3 style="color: rgb(68, 67, 67);">#유월드 루지테마파크 정보</h3>
+                    <li style="color: gray;">- 입장시간 제한 없음(연중 무휴)</li>
+                    <li style="color: gray;">- 한국에서 느끼는 프랑스풍 마을</li>
+                    <li style="color: gray;">- 주소지 : 전남 담양군 담양읍 학동리 586-1</li>
+                    <li style="color: gray;">- 홈페이지 :<a href="http://metaprovence.co.kr">http://metaprovence.co.kr(인스타/페이스북 검색가능)</a></li>
+                    <li style="color: gray;">-주차,남/녀 화장실구분,장애인 편의시설,다양한 먹거리</li>
+                    <li style="color: gray;"> - 문의전화 : 061-383-1710</li>
+                </ul>
+            </div>
+        </div>
+    </div><!--content2_end-->
+    </div>
+    <footer>
+        <div id="footer_wrap">
+            <div class="footer_box"style="display: flex;">
+                <p onclick="location.href='refund2.html'"> 취소 환불 규정</p>
+                <p onclick="location.href='emailban.html'">이메일무단수집거부</p>
+                <p onclick="location.href='policy.html'">개인정보처리방침</p>
+            </div>
+            <div class="footer_box">
+                <p >상호명:BACKPACK TOUR</p>
+                <p>대표자:김가방</p>
+                <p>개인정보책임자:정주머니</p>
+                <p>상담전화:1234-5678</p>
+                <p>주소: 대한민국 부산광역시 아버지구 가방에들어가신다.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+<script>
+    function send(){
+        if(frm1.departure.value==""){alert("출발지을 지정하세요");frm1.departure.focus();return false;}
+        if(frm1.destination.value==""){alert("도착지을 지정하세요");frm1.destination.focus(); return false;}
+        if(frm1.date1.value==""){alert("출발일을 지정하세요");frm1.date1.focus();return false;}
+        if(frm1.date2.value==""){alert("도착일을 지정하세요");frm1.date2.focus(); return false;}
+        document.frm1.submit();
+    }
+    function login(){
+        if(loginfrm.usid.value==""){alert("ID또는 E-mail계정을 입력하세요.");loginfrm.usid.focus(); return false;}
+        if(loginfrm.uspw.value==""){alert("비밀번호를 입력하세요.");loginfrm.uspw.focus(); return false;}
+        document.loginfrm.submit();
+    }
+    function pop(){
+        window.open('signup.html','_blank','left=700,top=200,width=500,height=500',);
+    }
+    function pop2(){
+        window.open('id.html','_blank','left=700,top=200,width=500,height=500');
+    }
+    function pop3(){
+        window.open('idpw2.html','_blank','left=700,top=200,width=500,height=500');
+    }
+    
+</script>

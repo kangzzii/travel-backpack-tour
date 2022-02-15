@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BACKPACK"CHUNGCHEONGDO"</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png"></a>
+        </div>
+        <ul class="nav">
+            <li onclick="location.href='backpackmain.html'">Backpack Tour</li>
+            <li onclick="location.href='koreamain.html'">Trip To Korea</li>
+            <li onclick="location.href='euromain.html'">Trip To Europe</li>
+        </ul>
+    <div id="modalwindow">
+        <input type="checkbox" id="login" class="checkbox">
+        <label for="login" class="login_text">Login<img src="images/login2.png"style="width:45px; height:45px;"></label>
+        <div class="loginwrap">
+        <div class="loginmain">
+            <label for="login" class="loginclose">X</label>
+            <div id="login">
+                <form name="loginfrm" method="post" action="">
+                    <table class="logintable">
+                        <tr>
+                            <td colspan="3">
+                                <img src="images/logo.png">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="text" class="logintable_t"
+                                 placeholder="ID또는 E-mail계정을 입력해주세요." name="usid">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="password" class="logintable_t"
+                                placeholder="비밀번호를 입력해주세요." name="uspw">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="button" class="login_bt"
+                                value="Login" onclick="login()">
+                            </td>
+                        </tr>
+                        <tr class="login_sub">
+                            <td onclick="pop()">회원 가입</td>
+                            <td onclick="pop2()">계정 찾기</td>
+                            <td onclick="pop3()">비밀번호 찾기</td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <label for="login" class="loginback"></label>
+        </div>
+    </div>
+</header>
+<div style="padding-bottom: 100px;">
+    <div id="chungcheongdo">
+        <div class="main_img">
+            <img src="images/cdo_text.png">
+        </div>
+        <p class="main_text2">'안녕하셔유~오고있는거 맞쥬?'<br>
+            동서길목에 있는<span style="font-size: 55px; color: rgb(133, 123, 253);">중남부지역!!</span> 충청도
+        </p>
+    </div>
+    <div id="middle_2">
+        <div class="middle_wrap_2">
+            <div class="mini_menu">홈 > 충청도 > 충청도여행정보</div>
+        </div>
+    </div>
+    <div id="content" style="height:120px">
+        <div class="box4">
+            <div class="box1">
+                * BACKPACK TOUR * 가 추천하는 충청도여행(충청북도/충정남도) 
+            </div><!--con_end-->
+        </div>
+    </div>
+    <br>
+    <div id="content_3">
+        <div class="con3_title">단양읍 고수동굴(충청북도)</div>
+        <div class="con3_box">
+            <div class="con3_box1">
+                <div class="con3_img">
+                    <img src="images/cdo.jpg">
+                </div>
+            </div>
+            <div class="con3_box1">
+                <ul class="con3_text">
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">석회암 층에 100여 종의 석순과 종유석</li>
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">천연 동굴이 주는 신비하고 아름다운 자태!</li>
+                    <br>
+                    <h3 style="color: rgb(68, 67, 67);">#단양읍 고수동굴 정보</h3>
+                    <li style="color: gray;">- 운영시간 :하절기(4월-10월)09:00~17:30<br>
+                                               - 운영시간 :동절기(11월-3월)09:00~17:00</li>
+                    <li style="color: gray;">-어른(만19세이상)11,000원/청소년(중,고등학생)7,000원<br>
+                                               -어린이(만4세~초등학생)5,000원/경로(만65세이상)장애인,기타5,500원</li>                       
+                    <li style="color: gray;">- 주소지 : 충북 단양군 단양읍 고수동굴길 8 고수동굴관리사무소</li>
+                    <li style="color: gray;">- 주차 : 동굴 앞에 제1주차장,제2주차장(유료)</li>
+                    <li style="color: gray;">-홈페이지 :<a href="http://www.gosucave.co.kr/">http://www.gosucave.co.kr/</a></li>
+                    <li style="color: gray;"> - 문의전화 : 043-422-3072</li>
+                </ul>
+            </div>
+        </div>
+    </div><!--content1_end-->
+    <br>
+    <br>
+    <div id="content_3">
+        <div class="con3_title">마량리 동백나무숲(충청남도)</div>
+        <div class="con3_box">
+            <div class="con3_box1">
+                <div class="con3_img">
+                    <img src="images/cdo5.jpg">
+                </div>
+            </div>
+            <div class="con3_box1">
+                <ul class="con3_text">
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">"천연기념물 제169호"동백림</li>
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">바다와 어울럴진 아담한 정자,<br>그리고 동백나무숲</li>
+                    <br>
+                    <h3 style="color: rgb(68, 67, 67);">#마량리 동백나무숲 정보</h3>
+                    <li style="color: gray;">-적당한크기의 '동백나무숲'(계단길있음)</li>
+                    <li style="color: gray;">- 연중무휴/ 주차시설(유)</li>
+                    <li style="color: gray;">- 주소지 : 충남 서천군 서면 마량리 275-481</li>
+                    <li style="color: gray;">-개인(19세~64세)1,000원/단체800원<br>
+                                               -청소년(13~18세),군인(단기하사 이하)개인700원/단체500원<br>
+                                               -어린이(7세~12세)개인500원/단체400원</li>
+                    <li style="color: gray;"> - 문의전화 : 041-952-7999</li>
+                </ul>
+            </div>
+        </div>
+    </div><!--content2_end-->
+    <br>
+    <br>
+    
+    <div id="content_3">
+        <div class="con3_title">문광면 문광저수지(충청북도)</div>
+        <div class="con3_box">
+            <div class="con3_box1">
+                <div class="con3_img">
+                    <img src="images/cdo6.jpg">
+                </div>
+            </div>
+            <div class="con3_box1">
+                <ul class="con3_text">
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">'2km'의 은행나무길이 둘러싸고 있는!!</li>
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">'유색벼'를 이용한<br> '귀여운 유색벼그림'을 볼수있다</li>
+                    <br>
+                    <h3 style="color: rgb(68, 67, 67);">#문광면 문광저수지 정보</h3>
+                    <li style="color: gray;">- 포토존 : '다 잘될거야'나무그네(강력추천)<br>- 포토존 : '민물낚시방갈로'저수지 수면위 위치</li>
+                    <li style="color: gray;">   ＊이용요금 : 무료 /무료주차(연중무휴)</li>
+                    <li style="color: gray;">- 주소지 : 충북 괴산군 문광면 양곡리 16</li>
+                    <li style="color: gray;">   *근처 '소금랜드'도 추천(주차장 같이사용)</li>
+                    <li style="color: gray;">   ＊ 소요시간 : 은행나무길 약 30분소요.(365일다른 풍경추천!!)</li>
+                </ul>
+            </div>
+        </div>
+    </div><!--content3_end-->
+    <br>
+    <br>
+    <div class="guide_icon" onclick="location.href='reservation1.html'"></div>
+    <div id="content_3">
+        <div class="con3_title">서산시 서산유기방가옥(충청남도)</div>
+        <div class="con3_box">
+            <div class="con3_box1">
+                <div class="con3_img">
+                    <img src="images/cdo7.jpg">
+                </div>
+            </div>
+            <div class="con3_box1">
+                <ul class="con3_text">
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);"> '일제 강점기의 가옥'<br>충청남도민속자료 제23호로 지정!!</li>
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">'봄'에 수선화가 한가득!!</li>
+                    <br>
+                    <h3 style="color: rgb(68, 67, 67);">#문광면 문광저수지 정보</h3>
+                    <li style="color: gray;">-미스터 선샤인 드라마촬영지</li>
+                    <li style="color: gray;"> ＊이용요금 :일반3,000원/경로3,000원/장애인3,000원
+                        <br>＊이용요금 :학생3,000원/유치원3,000원
+                        <br>※ 유상체험프로그램은 사전 및 현장예약제로 운영</li>
+                    <li style="color: gray;">- 주소지 : 충북 괴산군 문광면 양곡리 16</li>
+                    <li style="color: gray;">-홈페이지:<a href="http://xn--o39am5bv7vomeopa05vdxb.gajagaja.co.kr/#none">http://xn--o39am5bv7vomeopa05vdxb.gajagaja.co.kr/#none</a></li>
+                    <li style="color: gray;"> - 문의전화 : 041-663-4326</li>
+                </ul>
+            </div>
+        </div>
+    </div><!--content3_end-->
+    </div>
+    <footer>
+        <div id="footer_wrap">
+            <div class="footer_box"style="display: flex;">
+                <p onclick="location.href='refund2.html'"> 취소 환불 규정</p>
+                <p onclick="location.href='emailban.html'">이메일무단수집거부</p>
+                <p onclick="location.href='policy.html'">개인정보처리방침</p>
+            </div>
+            <div class="footer_box">
+                <p >상호명:BACKPACK TOUR</p>
+                <p>대표자:김가방</p>
+                <p>개인정보책임자:정주머니</p>
+                <p>상담전화:1234-5678</p>
+                <p>주소: 대한민국 부산광역시 아버지구 가방에들어가신다.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+<script>
+    function send(){
+        if(frm1.departure.value==""){alert("출발지을 지정하세요");frm1.departure.focus();return false;}
+        if(frm1.destination.value==""){alert("도착지을 지정하세요");frm1.destination.focus(); return false;}
+        if(frm1.date1.value==""){alert("출발일을 지정하세요");frm1.date1.focus();return false;}
+        if(frm1.date2.value==""){alert("도착일을 지정하세요");frm1.date2.focus(); return false;}
+        document.frm1.submit();
+    }
+    function login(){
+        if(loginfrm.usid.value==""){alert("ID또는 E-mail계정을 입력하세요.");loginfrm.usid.focus(); return false;}
+        if(loginfrm.uspw.value==""){alert("비밀번호를 입력하세요.");loginfrm.uspw.focus(); return false;}
+        document.loginfrm.submit();
+    }
+    function pop(){
+        window.open('signup.html','_blank','left=700,top=200,width=500,height=500',);
+    }
+    function pop2(){
+        window.open('id.html','_blank','left=700,top=200,width=500,height=500');
+    }
+    function pop3(){
+        window.open('idpw2.html','_blank','left=700,top=200,width=500,height=500');
+    }
+    
+</script>

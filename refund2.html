@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BACKPACK</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png"></a>
+        </div>
+        <ul class="nav">
+            <li onclick="location.href='backpackmain.html'">Backpack Tour</li>
+            <li onclick="location.href='koreamain.html'">Trip To Korea</li>
+            <li onclick="location.href='euromain.html'">Trip To Europe</li>
+        </ul>
+    <div id="modalwindow">
+        <input type="checkbox" id="login" class="checkbox">
+        <label for="login" class="login_text">Login<img src="images/login2.png"style="width:45px; height:45px;"></label>
+        <div class="loginwrap">
+        <div class="loginmain">
+            <label for="login" class="loginclose">X</label>
+            <div id="login">
+                <form name="loginfrm" method="post" action="">
+                    <table class="logintable">
+                        <tr>
+                            <td colspan="3">
+                                <img src="images/logo.png">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="text" class="logintable_t"
+                                 placeholder="ID또는 E-mail계정을 입력해주세요." name="usid">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="password" class="logintable_t"
+                                placeholder="비밀번호를 입력해주세요." name="uspw">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="button" class="login_bt"
+                                value="Login" onclick="login()">
+                            </td>
+                        </tr>
+                        <tr class="login_sub">
+                            <td onclick="pop()">회원 가입</td>
+                            <td onclick="pop2()">계정 찾기</td>
+                            <td onclick="pop3()">비밀번호 찾기</td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <label for="login" class="loginback"></label>
+        </div>
+    </div>
+</header>
+    
+   <div id="backpackmain">
+       <div class="backpack_title"> WELCOME TO<br> BACKPACK TOUR </div>
+   </div>
+   <div id="backpack_content" style="height: 150px;">
+        <div class="koreacontent_title">
+            <span style="font-weight: bold;font-size: 1.4em;">여러분의 여행을 BACKPACK TOUR와  함께하세요<br></span>
+            <a href="index.html"> Home</a>> <a href="backpackmain.html">ABOUT BACKPACK TOUR</a> > <a  style="font-weight: bold;" href="refund2.html">취소 환불규정</a>
+        </div>
+    </div>
+    <div id="refund2">
+        <table class="refund2">
+            <tr>
+                <th colspan="2">
+                    취소 환불 규정
+                </th>
+            </tr>
+            <tr>
+                <td>숙소</td>
+                <td>
+                    -숙소 상세페이지에 있는 패키지 상품 이용시 더 많이 할인 받으실수 있습니다.
+                    <br>-연휴 및 여름성수기, 연말연시에는 객실요금이 변동될수 있습니다.
+                    <br>-애완동물 동반시 입실이 거절됩니다. (당일취소로 간주되어 숙박료 환불이 전혀 안됩니다.)
+                    <br>-취소, 변경은 주중에만 가능하며, 전화로만 가능합니다. (주말->토,일/ 공휴일은 처리안됨)
+                    <br>-예약 기준인원을 초과하여 숙박지로 가셨을때 입실이 거부 됩니다.(당일취소로 간주 환불불가)
+                    <br>-숙박요금 입금이 안될경우 숙박은 자동취소 됩니다. (1주일전까지 완불해야합니다.)
+                    <br>-예약확정 후 변경/취소수수료가 예약 대행수수료인 10.000원이 기본 적용됩니다. (연휴 및 성수기건은 20.000원 적용)
+                    <table>
+                        <tr>
+                            <td>
+                                ① 비수기
+                            </td>
+                            <td>
+                                 - 입실일 당일 ~ 3일 전에는 이용 요금의 100%를 공제합니다.(전액 환불 안됨)
+                                 <br> - 입실일 4일 ~ 6일 전에는 이용 요금의 70%를 공제합니다.(30% 환불)
+                                 <br> - 입실일 7일 전에는 이용 요금의 10%를 공제합니다.(90% 환불)
+                                  <br> - 입실일 8일 전에는 대행수수료 10,000원 제외 후 환불합니다.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                ② 성수기 & 연휴
+                            </td>
+                            <td>
+                                 - 입실일 당일 ~ 7일 전에는 이용 요금의 100%를 공제합니다.(전액 환불 안됨)
+                            <br> - 입실일 8일 ~ 14일 전에는 이용 요금의 50%를 공제합니다.(50% 환불)
+                            <br> - 입실일 15일 ~ 20일 전에는 이용 요금의 30%를 공제합니다.(70% 환불)
+                            <br> - 입실일 21일 전에는 대행수수료 20,000원 제외 후 환불합니다. 
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    렌트카
+                </td>
+                <td>
+                    ⊙ 애완견 동반 고객은 렌트불가합니다.
+                    <br>⊙ 20시이후 인수고객은 야간배차료가 발생할 수 있습니다.(사전문의 부탁드립니다.)
+                    <br>- 백팩 렌트카 승용차 대여조건: 만21세이상, 운전면허경력 최소1년 이상만 렌트카 이용가능.
+                    <br>- 백팩 렌트카 승합차 대여조건: 만21세이상, 운전면허경력 최소2년 이상만 렌트카 이용가능. (운전면허증 꼭 가져와야함)
+                    <br>- 백팩 렌트카 12인승 승합차는 만21세 이상, 1종 보통면허 이상, 면허 취득일 2년 이상만 12인승이상 승합차 이용가능.
+                    <br>- 백팩 렌트카 취소수수료 [비수기] 15일전 대행수수료제외 후 환불,~10일전 70%환불,~7일전 50%환불,
+                      ~4일전 30%환불, ~3일전 환불불가
+                    <br>- 백팩 렌트카 취소수수료 [성수기] 30일전 대행수수료제외 후 환불,~20일전 70%환불,~10일전 50%환불,
+                      ~6일전 30%환불,~5일전 환불불가.
+                    <br>- 백팩 렌트카 이용조건이 안되어서 제주현지 공항에서 차량인수시 렌트카회사로부터 이용 거부당할경우 당일껀 요금 환불불가.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    항공
+                </td>
+                <td>
+                    <br>- 백팩 항공권 예약시 필요 항목 : 여행객 전원의 성명, 대표자 연락처, 소인 (생년월일)
+                     <br>   - 예약이 확정된 후라도 항공시간은 항공사의 사정에 의해 변경될 수 있습니다.  
+                      <br>  - 단체발권이라 출발 1~2일 전에 항공시간이 확정됩니다. (확정되면 담당자가 바로 연락드립니다)
+                     <br>   - 백팩 항공권은 왕복으로만 이용 가능하며 여정변경이 안되는 항공권입니다.(편도사용 불가, 편도사용 후 나머지 편도 환불불가 입니다.)
+                       <br> -  할인항공권은 취소시 수수료가 부과됨을 유념하시기 바랍니다.
+                        <br>- 할인항공이 확정 되더라도 1-2일전에 항공사의 사정에 의해  항공사나 혹은 항공시간이 임의로 변경될수도 있습니다.
+                        <br>- 할인항공권은 10인이상 모객이 안되면 할인율/항공사 가 변경되거나 할인적용이 안될수도 있습니다. 
+                       <br> - 백팩항공권은 입금이 되어야 예약 및 발권이 이뤄지며, 항공권 발권후에는 취소수수료가 바로 적용됩니다.
+                        <br>- 백팩항공권 발권후에는 변경,취소시 70% 환불되며, 7일~4일전 70~50% 환불, 3일전~당일은 50~0% 환불됩니다.
+                        <br>(단체모객 안될경우 100% 환불안될수도 있으며 출발일,항공사,스케쥴에 따라 차등적용 되므로 별도문의)
+                        <br>- 할인항공은 공동구매하는 단체항공권으로, 항공사의 규정이 아닌 단체발권 여행사의 환불규정이 적용됩니다.
+                        <br>- 할인항공의 취소, 변경은 주중에만 가능하며, 전화로만 가능합니다. (주말->토,일/ 공휴일은 처리안됨)
+                        <br>- 항공 50% 이상 할인받으시는것은 예약 발권후 취소시 환불이 불가인 상품 입니다.(신중히 예약하세요)
+                        <br>- 스케쥴에 나와있는 시간으로만 왕복으로 이용 가능하고, 항공권을 시간 변경해서 이용은 안됩니다.
+                        <br>- 왕복으로 사용하는 조건의 항공권으로 편도사용 불가입니다. 편도사용후 나머지 구간 환불 안됩니다.
+                        <br>- 단체할인적용 항공상품 이라서 10인이상 모객이 안되면 출발 1~2일전라도 할인적용이 안될수 있습니다.
+                        <br>- 항공권의 시간확정 되더라도 1-2일전에 모객 안되거나, 항공사사정에 의해 항공사,시간이 변경 될 수도 있습니다.
+                       <br> (비슷한 시간대로 항공사가 바뀔수 있고, 시간변경되서 원치않으면 환불 해드립니다.)
+                        <br>- 주말/연휴 항공은 숙소,차량 패키지용 상품이라 항공만 이용시 1인 10,000원의 패키지료 추가됩니다.
+                        <br>- 항공권은 천재지변으로 인한 결항시 전액 환불되며, 환불 받으신후 각자 공항서 개별 발권 하셔야 합니다.
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="background-color: rgb(255, 155, 155);">
+                    - 예약 및 변경, 취소의 경우 당사 업무시간에 유선(전화)상으로만 가능하며, 취소시 수수료가 적용될 수 있습니다.  
+                      <br> ( 주중(월~금) 09:00 ~ 18:00 / 토요일 09:00 ~ 11:30 / 일요일 및 연휴 : 휴무 )
+                    <br>- 예약시 일정과 달리 현지에서의 일정이 변경될 경우 차량이용 패턴에 따라 별도의 추가금액이 발생될 수 있습니다.
+                <br>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <footer>
+        <div id="footer_wrap">
+            <div class="footer_box"style="display: flex;">
+                <p onclick="location.href='refund2.html'"> 취소 환불 규정</p>
+                <p onclick="location.href='emailban.html'">이메일무단수집거부</p>
+                <p onclick="location.href='policy.html'">개인정보처리방침</p>
+            </div>
+            <div class="footer_box">
+                <p >상호명:BACKPACK TOUR</p>
+                <p>대표자:김가방</p>
+                <p>개인정보책임자:정주머니</p>
+                <p>상담전화:1234-5678</p>
+                <p>주소: 대한민국 부산광역시 아버지구 가방에들어가신다.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+<script>
+    function send(){
+        if(frm1.departure.value==""){alert("출발지을 지정하세요");frm1.departure.focus();return false;}
+        if(frm1.destination.value==""){alert("도착지을 지정하세요");frm1.destination.focus(); return false;}
+        if(frm1.date1.value==""){alert("출발일을 지정하세요");frm1.date1.focus();return false;}
+        if(frm1.date2.value==""){alert("도착일을 지정하세요");frm1.date2.focus(); return false;}
+        document.frm1.submit();
+    }
+    function login(){
+        if(loginfrm.usid.value==""){alert("ID또는 E-mail계정을 입력하세요.");loginfrm.usid.focus(); return false;}
+        if(loginfrm.uspw.value==""){alert("비밀번호를 입력하세요.");loginfrm.uspw.focus(); return false;}
+        document.loginfrm.submit();
+    }
+    function pop(){
+        window.open('signup.html','_blank','left=700,top=200,width=500,height=500',);
+    }
+    function pop2(){
+        window.open('id.html','_blank','left=700,top=200,width=500,height=500');
+    }
+    function pop3(){
+        window.open('idpw2.html','_blank','left=700,top=200,width=500,height=500');
+    }
+    
+</script>

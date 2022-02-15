@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BACKPACK</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png"></a>
+        </div>
+        <ul class="nav">
+            <li onclick="location.href='backpackmain.html'">Backpack Tour</li>
+            <li onclick="location.href='koreamain.html'">Trip To Korea</li>
+            <li onclick="location.href='euromain.html'">Trip To Europe</li>
+        </ul>
+    <div id="modalwindow">
+        <input type="checkbox" id="login" class="checkbox">
+        <label for="login" class="login_text">Login<img src="images/login2.png"style="width:45px; height:45px;"></label>
+        <div class="loginwrap">
+        <div class="loginmain">
+            <label for="login" class="loginclose">X</label>
+            <div id="login">
+                <form name="loginfrm" method="post" action="">
+                    <table class="logintable">
+                        <tr>
+                            <td colspan="3">
+                                <img src="images/logo.png">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="text" class="logintable_t"
+                                 placeholder="ID또는 E-mail계정을 입력해주세요." name="usid">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="password" class="logintable_t"
+                                placeholder="비밀번호를 입력해주세요." name="uspw">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="button" class="login_bt"
+                                value="Login" onclick="login()">
+                            </td>
+                        </tr>
+                        <tr class="login_sub">
+                            <td onclick="pop()">회원 가입</td>
+                            <td onclick="pop2()">계정 찾기</td>
+                            <td onclick="pop3()">비밀번호 찾기</td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <label for="login" class="loginback"></label>
+        </div>
+    </div>
+</header>
+    <div id="preparemain">
+    <div class="prepare_title"> WELCOME TO<br> BACKPACK TOUR </div>
+    </div>
+   <div id="backpack_content" style="height: 150px;">
+    <div class="koreacontent_title">
+        <span style="font-weight: bold;font-size: 1.4em;">여러분의 여행을 BACKPACK TOUR와  함께하세요<br></span>
+        <a href="index.html"> Home</a>> <a href="backpackmain.html">BACKPACK TOUR</a> > <a  style="font-weight: bold;" href="prepare.html">여행준비</a>
+    </div>
+    </div>
+    <div id="prepare">
+        <ul class="prepare_nav">
+            <li onclick="location.href='prepare.html'"style="background:linear-gradient(to left,#263c8b,goldenrod);color:white;">해외여행 준비물</li>
+            <li onclick="location.href='prepare2.html'">국내여행 준비물</li>
+        </ul>
+        <table class="prepare1">
+            <tr>
+                <td
+                 style="font-weight: bold;text-align: center;
+                 font-size: 2em;color: white; background-color:#263c8b; ;">해외여행 필수 준비물</td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold;font-size: 1.5em;padding-top: 50px;text-align: center;">여권 챙기셨나요?</td>
+            </tr>
+            <tr>
+                <td><img src="images/pasport.png" style="width: 300px;"></td>
+            </tr>
+            <tr>
+                <td style="border-bottom: 1px solid lightgray;">너무 당연한 준비물이지만 놓치기 쉬운데요.<br>
+                    어느 나라든 <span style="font-weight: bold;">여권만료 기간이 6개월 이하</span> 남았다면 입국이 제한될 수 있으니
+                    <span style="font-weight: bold;color:red">여권만료 기간</span>을 꼭 확인하시길 바랍니다. 여권은 해외에서 나의 신분을 나타내주는 유일한 신분증입니다. 잃어버린다면 곤란한
+                    상황은 물론 여해을 망칠 수도 있겠죠. 이를 대비해서 여권 스캔 파일을 이메일이나 유심에 저장해놓거나, 여권
+                    복사본을 챙겨 가시기를 추천해 드립니다. </td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold;font-size: 1.5em;padding-top: 50px;text-align: center;">백팩? 케리어?</td>
+            </tr>
+            <tr>
+                <td><img src="images/backpackprepare.jpg" style="width: 300px;"></td>
+            </tr>
+            <tr>
+                <td style="border-bottom: 1px solid lightgray;">배낭을 이용하면 두 손이 자유롭고 이동 시 편리하면서도 신속하게 움직일 수 있습니다. 
+                    하지만 무조건 배낭을 추천드리지는 않습니다.<span style="font-weight: bold;">자신의 신체조건과 여행기간을 고려해서가방을 선택해야 합니다.</span>
+                    무거운 배낭을 매고 하는 여행은, 가혹하기만 합니다. 플레밍은 "백팩의 무게가 몸무게의 40%를 넘어서는 안 된다"고 말합니다. 
+                    또한, 여분의 공간이 있다고 해서 짐을 더 싸야 하는 것은 아니라는 것을 기억하셔야합니다.
+                   <span style="font-weight: bold;"> 어떤 종류의 경험을 원하는지 미리 결정한 다음, 그것을 위해 구체적으로 짐을 싸시길 추천드립니다.</span></td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold;font-size: 1.5em;padding-top: 50px;text-align: center;">휴대용 가방에 꼭 챙겨야 할 물건들</td>
+            </tr>
+            <tr>
+                <td style="border-bottom: 1px solid lightgray;">
+                    ● <span style="font-weight: bold;">여권</span> : 해외 여행자라면 반드시 챙겨야할 필수 여행 준비물.
+                    <br>● <span style="font-weight: bold;">지갑</span> : 현금, 체크/신용카드, 국제학생증, 국제면허증 등을 소지하기
+                    <br>● 여분의 <span style="font-weight: bold;">마스크</span>와 100ml 이하의 <span style="font-weight: bold;">손 소독제</span> : 개인의 위생과 안전을 생각하면 필수!
+                    <br>● <span style="font-weight: bold;">E-티켓 및 바우처</span> : 요즘은 핸드폰 앱에서 바로 QR코드나 바코드로 가능한 경우가 많지만, 혹시 모르니 사전에 준비해두는 것도 추천드립니다.</td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold;font-size: 1.5em;padding-top: 50px;text-align: center;">비행 중 있으면 유용한 물건들</td>
+            </tr>
+            <tr>
+                <td><img src="images/prepare2.png" style="width: 300px;"></td>
+            </tr>
+            <tr>
+                <td style="border-bottom: 1px solid lightgray;">
+                    <br>● <span style="font-weight: bold;">목베개, 안대, 귀마개</span> : 편안한 비행은 물론, 숙면에 도움을 주기에 필수 여행 준비물 중 하나입니다.
+                    <br>●기내 반입 기준에 적합한 수분크림, 립밤, 얇은 스카프 : 건조하고 서늘한 기내에서 체온 유지 및 피부 보호에 도움이 됩니다.
+                    <br>● <span style="font-weight: bold;">볼펜</span> : 빠른 입국신고서 작성시 필요한 여행 준비물 중 하나입니다.
+                    <br>●씹는 치약 : 고체형 치약으로, 국제선 액체류 반입 규정을 신경 쓰지 않아도 되어 편리합니다.  </td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold;font-size: 1.5em;padding-top: 50px;text-align: center;">기내로 들고 타야 할 물건들</td>
+            </tr>
+            <tr>
+                <td style="border-bottom: 1px solid lightgray;">
+                    <br>● 보조배터리 : 기내 반입 허용기준은 항공사마다 조금씩 다르니, 꼭 해당 항공사 홈페이지를 참고하시길 바랍니다.
+                    <br>● 카메라, 노트북, 태블릿 pc 등의 고가의 장비
+                    귀걸이, 팔찌와 같은 귀중품
+                    <br>● <span style="font-weight: bold;">라이터: 위탁 수하물로 반입할 수 없으며</span>, 1개만 소지가 가능합니다.</td>
+            </tr>
+            
+            <tr>
+                <td style="font-weight: bold;font-size: 1.5em;padding-top: 50px;text-align: center;">캐리어/백팩에 꼭 챙겨야 할 물건들</td>
+            </tr>
+            <tr>
+                <td><img src="images/prepare3.jpg" style="width: 300px;"></td>
+            </tr>
+            <tr>
+                <td>
+                    ● 옷과 속옷, 양말  
+                    <br>● 신발류 
+                    <br>● 화장품 : 기초 제품, 선크림, 수분크림, 마스크팩 등
+                    <br>● 상비약 : 멀미약, 지사제, 해열제, 종합 감기약, 상처연고 등이 있으며, 요즘에는 소포장(낱개 포장)된 제품도 많아 편리합니다.
+                    <br>● 넓이가 있는 얇은 스카프 : 추울 때 걸치기 좋으며, 해변 또는 잔디에서 돗자리처럼 활용할 수도 있습니다.
+                    <br>● 선글라스와 가방에 넣기 좋은 모자 : 햇볕으로부터 눈을 보호 할 수도 있으며, 비를 피할 때도 유용합니다.    
+                </td>
+            </tr>
+        </table>
+    </div>
+    <footer>
+        <div id="footer_wrap">
+            <div class="footer_box"style="display: flex;">
+                <p onclick="location.href='refund2.html'"> 취소 환불 규정</p>
+                <p onclick="location.href='emailban.html'">이메일무단수집거부</p>
+                <p onclick="location.href='policy.html'">개인정보처리방침</p>
+            </div>
+            <div class="footer_box">
+                <p >상호명:BACKPACK TOUR</p>
+                <p>대표자:김가방</p>
+                <p>개인정보책임자:정주머니</p>
+                <p>상담전화:1234-5678</p>
+                <p>주소: 대한민국 부산광역시 아버지구 가방에들어가신다.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+<script>
+    function send(){
+        if(frm1.departure.value==""){alert("출발지을 지정하세요");frm1.departure.focus();return false;}
+        if(frm1.destination.value==""){alert("도착지을 지정하세요");frm1.destination.focus(); return false;}
+        if(frm1.date1.value==""){alert("출발일을 지정하세요");frm1.date1.focus();return false;}
+        if(frm1.date2.value==""){alert("도착일을 지정하세요");frm1.date2.focus(); return false;}
+        document.frm1.submit();
+    }
+    function login(){
+        if(loginfrm.usid.value==""){alert("ID또는 E-mail계정을 입력하세요.");loginfrm.usid.focus(); return false;}
+        if(loginfrm.uspw.value==""){alert("비밀번호를 입력하세요.");loginfrm.uspw.focus(); return false;}
+        document.loginfrm.submit();
+    }
+    function pop(){
+        window.open('signup.html','_blank','left=700,top=200,width=500,height=500',);
+    }
+    function pop2(){
+        window.open('id.html','_blank','left=700,top=200,width=500,height=500');
+    }
+    function pop3(){
+        window.open('idpw2.html','_blank','left=700,top=200,width=500,height=500');
+    }
+    
+</script>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BACKPACK</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png"></a>
+        </div>
+        <ul class="nav">
+            <li onclick="location.href='backpackmain.html'">Backpack Tour</li>
+            <li onclick="location.href='koreamain.html'">Trip To Korea</li>
+            <li onclick="location.href='euromain.html'">Trip To Europe</li>
+        </ul>
+    <div id="modalwindow">
+        <input type="checkbox" id="login" class="checkbox">
+        <label for="login" class="login_text">Login<img src="images/login2.png"style="width:45px; height:45px;"></label>
+        <div class="loginwrap">
+        <div class="loginmain">
+            <label for="login" class="loginclose">X</label>
+            <div id="login">
+                <form name="loginfrm" method="post" action="">
+                    <table class="logintable">
+                        <tr>
+                            <td colspan="3">
+                                <img src="images/logo.png">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="text" class="logintable_t"
+                                 placeholder="ID또는 E-mail계정을 입력해주세요." name="usid">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="password" class="logintable_t"
+                                placeholder="비밀번호를 입력해주세요." name="uspw">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="button" class="login_bt"
+                                value="Login" onclick="login()">
+                            </td>
+                        </tr>
+                        <tr class="login_sub">
+                            <td onclick="pop()">회원 가입</td>
+                            <td onclick="pop2()">계정 찾기</td>
+                            <td onclick="pop3()">비밀번호 찾기</td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <label for="login" class="loginback"></label>
+        </div>
+    </div>
+</header>
+   <div id="backpackmain">
+       <div class="backpack_title"> WELCOME TO<br> BACKPACK TOUR </div>
+   </div>
+   <div id="backpack_content">
+    <div class="koreacontent_title">
+        <span style="font-weight: bold;font-size: 1.4em;">여러분의 여행을 BACKPACK TOUR와  함께하세요<br></span>
+           Home> BACKPACK TOUR
+    </div>
+    <div class="koreacontent_box">
+        <div class="backpack_box2">
+            <p class="koreacontent_text">ABOUT BACKPACK TOUR</p>
+        <div class="backpack_frame">
+            <ul class="backpack_framelist">
+                <li onclick="location.href='backpack.html'">BACKPACK TOUR</li>
+                <li onclick="location.href='policy.html'">개인정보처리방침</li>
+                <li onclick="location.href='emailban.html'">이메일무단수집거부</li>
+            </ul>
+        </div>
+        </div>
+        <div class="backpack_box2">
+            <p class="koreacontent_text">코로나 관련 문의사항</p>
+            <div class="backpack_frame">
+                <ul class="backpack_framelist">
+                    <li onclick="location.href='corona.html'">국내 코로나19 상황</li>
+                    <li onclick="location.href='corona2.html'">자가격리 면제국가안내</li>
+                    <li  onclick="location.href='coronaqna.html'">코로나19 관련 여행 QnA</li>
+                </ul>
+            </div>
+        </div>
+        <div class="backpack_box2">
+            <p class="koreacontent_text">여행준비</p>
+            <div class="backpack_frame">
+                <ul class="backpack_framelist"style="margin-top: 30px;">
+                    <li onclick="location.href='prepare2.html'">국내여행 준비</li>
+                    <li onclick="location.href='prepare.html'">해외 여행준비</li>
+                </ul>
+            </div>
+        </div>
+        <div class="backpack_box2">
+            <p class="koreacontent_text">BACKPACK TOUR PLAYLIST</p>
+            <div class="backpack_frame">
+                <ul class="backpack_framelist">
+                    <li onclick="location.href='music1.html'">국내여행 playlist</li>
+                    <li onclick="location.href='music2.html'">해외여행 playlist</li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+   
+</div>
+<footer>
+    <div id="footer_wrap">
+        <div class="footer_box"style="display: flex;">
+            <p onclick="location.href='refund2.html'"> 취소 환불 규정</p>
+            <p onclick="location.href='emailban.html'">이메일무단수집거부</p>
+            <p onclick="location.href='policy.html'">개인정보처리방침</p>
+        </div>
+        <div class="footer_box">
+            <p >상호명:BACKPACK TOUR</p>
+            <p>대표자:김가방</p>
+            <p>개인정보책임자:정주머니</p>
+            <p>상담전화:1234-5678</p>
+            <p>주소: 대한민국 부산광역시 아버지구 가방에들어가신다.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+<script>
+    function send(){
+        if(frm1.departure.value==""){alert("출발지을 지정하세요");frm1.departure.focus();return false;}
+        if(frm1.destination.value==""){alert("도착지을 지정하세요");frm1.destination.focus(); return false;}
+        if(frm1.date1.value==""){alert("출발일을 지정하세요");frm1.date1.focus();return false;}
+        if(frm1.date2.value==""){alert("도착일을 지정하세요");frm1.date2.focus(); return false;}
+        document.frm1.submit();
+    }
+    function login(){
+        if(loginfrm.usid.value==""){alert("ID또는 E-mail계정을 입력하세요.");loginfrm.usid.focus(); return false;}
+        if(loginfrm.uspw.value==""){alert("비밀번호를 입력하세요.");loginfrm.uspw.focus(); return false;}
+        document.loginfrm.submit();
+    }
+    function pop(){
+        window.open('signup.html','_blank','left=700,top=200,width=500,height=500',);
+    }
+    function pop2(){
+        window.open('id.html','_blank','left=700,top=200,width=500,height=500');
+    }
+    function pop3(){
+        window.open('idpw2.html','_blank','left=700,top=200,width=500,height=500');
+    }
+    
+</script>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BACKPACK</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png"></a>
+        </div>
+        <ul class="nav">
+            <li onclick="location.href='backpackmain.html'">Backpack Tour</li>
+            <li onclick="location.href='koreamain.html'">Trip To Korea</li>
+            <li onclick="location.href='euromain.html'">Trip To Europe</li>
+        </ul>
+    <div id="modalwindow">
+        <input type="checkbox" id="login" class="checkbox">
+        <label for="login" class="login_text">Login<img src="images/login2.png"style="width:45px; height:45px;"></label>
+        <div class="loginwrap">
+        <div class="loginmain">
+            <label for="login" class="loginclose">X</label>
+            <div id="login">
+                <form name="loginfrm" method="post" action="">
+                    <table class="logintable">
+                        <tr>
+                            <td colspan="3">
+                                <img src="images/logo.png">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="text" class="logintable_t"
+                                 placeholder="ID또는 E-mail계정을 입력해주세요." name="usid">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="password" class="logintable_t"
+                                placeholder="비밀번호를 입력해주세요." name="uspw">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="button" class="login_bt"
+                                value="Login" onclick="login()">
+                            </td>
+                        </tr>
+                        <tr class="login_sub">
+                            <td onclick="pop()">회원 가입</td>
+                            <td onclick="pop2()">계정 찾기</td>
+                            <td onclick="pop3()">비밀번호 찾기</td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <label for="login" class="loginback"></label>
+        </div>
+    </div>
+</header>
+    <div id="france">
+        <div class="main_img">
+            <img src="images/france_text.png">
+        </div>
+        <p class="main_text2">'너와 함께, 그리고 낭만적인 프랑스'<br>
+            당신이 꿈꾸던
+            <span style="font-size: 55px; color: rgb(16, 50, 240);">프</span>
+            <span style="font-size: 55px; color: rgb(255, 255, 255);">랑</span>
+            <span style="font-size: 55px; color: rgb(250, 13, 13);">스</span> 지금 바로 떠나세요!
+        </p>
+    </div>
+    <div id="middle_2">
+        <div class="middle_wrap_2">
+            <div class="mini_menu">HOME > EUROPE  > FRANCE</div>
+        </div>
+    </div>
+    <div id="content" style="height:120px">
+        <div class="box4">
+            <div class="box1">
+                * BACKPACK TOUR * 가 추천하는 프랑스여행 
+            </div><!--con_end-->
+        </div>
+    </div>
+    <br>
+    <div id="content_3">
+        <div class="con3_title">파리 건축의 상징 에펠탑</div>
+        <div class="con3_box">
+            <div class="con3_box1">
+                <div class="con3_img">
+                    <img src="images/tour_f1.jpg">
+                </div>
+            </div>
+            <div class="con3_box1">
+                <ul class="con3_text">
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">책과 사진으로만 봤던 그곳!</li>
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">이젠 직접, 마음속 깊이 담아보아요.</li>
+                    <br>
+                    <h3 style="color: rgb(68, 67, 67);">#에펠 탑 정보</h3>
+                    <li style="color: gray;">- 운영시간 : 오전 9:30 ~ 오후 10:30 </li>
+                    <li style="color: gray;">   ＊매표 : 현장 구매도 가능하나, 인터넷 예매 추천 </li>
+                    <li style="color: gray;">- 주소지 : Champ de Mars, 5 Avenue Anatole, France, 75007 Paris.</li>
+                    <li style="color: gray;">- 이동방법 : Champ de Mars – Tour Eiffel • 도보로 7분 거리</li>
+                    <li style="color: gray;">   ＊ Bir-Hakeim • 도보로 8분 거리</li>
+                    <li style="color: gray;"> - 웹사이트 : https://www.toureiffel.paris/fr</li>
+                </ul>
+            </div>
+        </div>
+    </div><!--content1_end-->
+    <br>
+    <br>
+    <div id="content_3">
+        <div class="con3_title">노트르담 대성당</div>
+        <div class="con3_box">
+            <div class="con3_box1">
+                <div class="con3_img">
+                    <img src="images/tour_f2.jpg">
+                </div>
+            </div>
+            <div class="con3_box1">
+                <ul class="con3_text">
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">12세기 고딕 건축의 걸작</li>
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">장엄하고 웅장한 프랑스의 역사의 산증인</li>
+                    <br>
+                    <h3 style="color: rgb(68, 67, 67);">#노트르담 대성당 정보</h3>
+                    <li style="color: gray;">- 입장료 : 무료</li>
+                    <li style="color: gray;">   *종탑은 별도로 입장료가 있음(€10)</li>
+                    <li style="color: gray;">- 입장시간 : 평일 오전 8:00 ~ 오후 6:45 까지</li>
+                    <li style="color: gray;">   *주말 오전 동일, 오후 7 : 15 까지</li>
+                    <li style="color: gray;">- 웹사이트 : http://www.notredamedeparis.fr</li>
+                    <li style="color: gray;"> - 문의전화 : 33-1-42-34-56-10</li>
+                </ul>
+            </div>
+        </div>
+    </div><!--content2_end-->
+    <br>
+    <br>
+    <div class="guide_icon"onclick="location.href='reservation_france.html'"></div>
+    <div id="content_3">
+        <div class="con3_title">샹젤리제 거리</div>
+        <div class="con3_box">
+            <div class="con3_box1">
+                <div class="con3_img">
+                    <img src="images/tour_f3.jpg">
+                </div>
+            </div>
+            <div class="con3_box1">
+                <ul class="con3_text">
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">낮밤이 없는 명품 쇼핑거리</li>
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">세계에서 가장 화려한 거리 샹젤리제</li>
+                    <br>
+                    <h3 style="color: rgb(68, 67, 67);">#샹젤리제 정보</h3>
+                    <li style="color: gray;">- 지역 : 샹젤리제 거리 주변</li>
+                    <li style="color: gray;">- 주소지 : Avenue des Champs Élysées, 75008 Paris</li>
+                    <li style="color: gray;">- 웹사이트 : http://www.champselysees-paris.com</li>
+                    <li style="color: gray;">   ＊ 교통정보 : M1 Charles de Gaulle Étoile역<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; M2 Charles de Gaulle Étoile역<br> 
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 버스 28, 32, 42, 73, 83, 93</li>
+                </ul>
+            </div>
+        </div>
+    </div><!--content3_end-->
+    <footer>
+        <div id="footer_wrap">
+            <div class="footer_box"style="display: flex;">
+                <p onclick="location.href='refund2.html'"> 취소 환불 규정</p>
+                <p onclick="location.href='emailban.html'">이메일무단수집거부</p>
+                <p onclick="location.href='policy.html'">개인정보처리방침</p>
+            </div>
+            <div class="footer_box">
+                <p >상호명:BACKPACK TOUR</p>
+                <p>대표자:김가방</p>
+                <p>개인정보책임자:정주머니</p>
+                <p>상담전화:1234-5678</p>
+                <p>주소: 대한민국 부산광역시 아버지구 가방에들어가신다.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+<script>
+    function send(){
+        if(frm1.departure.value==""){alert("출발지을 지정하세요");frm1.departure.focus();return false;}
+        if(frm1.destination.value==""){alert("도착지을 지정하세요");frm1.destination.focus(); return false;}
+        if(frm1.date1.value==""){alert("출발일을 지정하세요");frm1.date1.focus();return false;}
+        if(frm1.date2.value==""){alert("도착일을 지정하세요");frm1.date2.focus(); return false;}
+        document.frm1.submit();
+    }
+    function login(){
+        if(loginfrm.usid.value==""){alert("ID또는 E-mail계정을 입력하세요.");loginfrm.usid.focus(); return false;}
+        if(loginfrm.uspw.value==""){alert("비밀번호를 입력하세요.");loginfrm.uspw.focus(); return false;}
+        document.loginfrm.submit();
+    }
+    function pop(){
+        window.open('signup.html','_blank','left=700,top=200,width=500,height=500',);
+    }
+    function pop2(){
+        window.open('id.html','_blank','left=700,top=200,width=500,height=500');
+    }
+    function pop3(){
+        window.open('idpw2.html','_blank','left=700,top=200,width=500,height=500');
+    }
+    
+</script>

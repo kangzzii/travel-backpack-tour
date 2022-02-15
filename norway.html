@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BACKPACK</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png"></a>
+        </div>
+        <ul class="nav">
+            <li onclick="location.href='backpackmain.html'">Backpack Tour</li>
+            <li onclick="location.href='koreamain.html'">Trip To Korea</li>
+            <li onclick="location.href='euromain.html'">Trip To Europe</li>
+        </ul>
+    <div id="modalwindow">
+        <input type="checkbox" id="login" class="checkbox">
+        <label for="login" class="login_text">Login<img src="images/login2.png"style="width:45px; height:45px;"></label>
+        <div class="loginwrap">
+        <div class="loginmain">
+            <label for="login" class="loginclose">X</label>
+            <div id="login">
+                <form name="loginfrm" method="post" action="">
+                    <table class="logintable">
+                        <tr>
+                            <td colspan="3">
+                                <img src="images/logo.png">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="text" class="logintable_t"
+                                 placeholder="ID또는 E-mail계정을 입력해주세요." name="usid">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="password" class="logintable_t"
+                                placeholder="비밀번호를 입력해주세요." name="uspw">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="button" class="login_bt"
+                                value="Login" onclick="login()">
+                            </td>
+                        </tr>
+                        <tr class="login_sub">
+                            <td onclick="pop()">회원 가입</td>
+                            <td onclick="pop2()">계정 찾기</td>
+                            <td onclick="pop3()">비밀번호 찾기</td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <label for="login" class="loginback"></label>
+        </div>
+    </div>
+</header>
+    <div id="norway">
+        <div class="main_img">
+            <img src="images/norway_text.png">
+        </div>
+        <p class="main_text2">어느 계절에도 찬란한 풍경을 간직한,<br>
+            대자연의 아름다움을
+            <span style="font-size: 45px; color: rgba(238, 241, 44, 0.815);">온몸으로</span> 느낄 수 있는
+            <span style="font-size: 55px; color: rgba(78, 251, 121, 0.815);">노르웨이</span>
+            
+        </p>
+    </div>
+    <div id="middle_2">
+        <div class="middle_wrap_2">
+            <div class="mini_menu">HOME > EUROPE  > NORWAY</div>
+        </div>
+    </div>
+    <div id="content" style="height:120px">
+        <div class="box4">
+            <div class="box1">
+                * BACKPACK TOUR * 가 추천하는 노르웨이여행
+            </div><!--con_end-->
+        </div>
+    </div>
+    <br>
+    <div id="content_3">
+        <div class="con3_title">트롬쇠.케이블카(Tromso Fjellheisen)</div>
+        <div class="con3_box">
+            <div class="con3_box1">
+                <div class="con3_img">
+                    <img src="images/tour_n1.jpg">
+                </div>
+            </div>
+            <div class="con3_box1">
+                <ul class="con3_text">
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">낮에는 도시를..</li>
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">그리고 밤에는 오로라를..</li>
+                    <br>
+                    <h3 style="color: rgb(68, 67, 67);">#트롬쇠.케이블카 운영 정보</h3>
+                    <li style="color: gray;">- 입장료 : 성인 210크로네 아동 100 크로네</li>
+                    <li style="color: gray;">   *210크로네 (한화 약 29,000원), 100크로네 (한화 약 14,000원)</li>
+                    <li style="color: gray;">- 운영시간 : *시즌별로 기간을 두고 상시 변경 (하단의 홈페이지 참조) </li>
+                    <li style="color: gray;">- 주소지 : Sollivegen 12, 9020 Tromsdalen, Norway</li>
+                    <li style="color: gray;">- 웹사이트 :  http://fjellheisen.no/en/</li>
+                    <li style="color: gray;">- 문의전화 : +47-77-63-87-37</li>
+                </ul>
+            </div>
+        </div>
+    </div><!--content1_end-->
+    <br>
+    <br>
+    <div id="content_3">
+        <div class="con3_title">홀멘콜렌 스키 점프대(Holmenkollen Ski Jump Tower)</div>
+        <div class="con3_box">
+            <div class="con3_box1">
+                <div class="con3_img">
+                    <img src="images/tour_n2.jpg">
+                </div>
+            </div>
+            <div class="con3_box1">
+                <ul class="con3_text">
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">전세계에서 가장 오래된 스키점프대</li>
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">스릴넘치는 체엄에 도전해보세요!</li>
+                    <br>
+                    <h3 style="color: rgb(68, 67, 67);">#홀멘콜렌 관광 정보</h3>
+                    <li style="color: gray;">- 입장료 : 성인 730크로네</li>
+                    <li style="color: gray;">   *박물관과 스키점프타워 + 짚라인 체험 포함</li>
+                    <li style="color: gray;">- 운영 : *매년 4월 ~ 9월 </li>
+                    <li style="color: gray;">- 주소지 : Kongeveien 5, 0787 Oslo, Norway</li>
+                    <li style="color: gray;">- 웹사이트 :  https://www.skiforeningen.no/holmenkollen</li>
+                </ul>
+            </div>
+        </div>
+    </div><!--content2_end-->
+    <br>
+    <br>
+    <div class="guide_icon"onclick="location.href='reservation_norway.html'"></div>
+    <div id="content_3">
+        <div class="con3_title">비겔란 조각공원(Vigeland Sculpture Park)</div>
+        <div class="con3_box">
+            <div class="con3_box1">
+                <div class="con3_img">
+                    <img src="images/tour_n3.jpg">
+                </div>
+            </div>
+            <div class="con3_box1">
+                <ul class="con3_text">
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">세계적인 조각가 구스타브 비겔란</li>
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">그의 작품들이 전시된 공원</li>
+                    <br>
+                    <h3 style="color: rgb(68, 67, 67);">#비겔란 조각공원 이용 정보</h3>
+                    <li style="color: gray;">- 입장료 : 무료</li>
+                    <li style="color: gray;">- 운영 시간 : 24시간</li>
+                    <li style="color: gray;">- 주소지 : Nobels gate 32, 0268 Oslo, norway</li>
+                    <li style="color: gray;">- 문의전화 : +47-23-49-37-00</li>
+                </ul>
+            </div>
+        </div>
+    </div><!--content3_end-->
+    <footer>
+        <div id="footer_wrap">
+            <div class="footer_box"style="display: flex;">
+                <p onclick="location.href='refund2.html'"> 취소 환불 규정</p>
+                <p onclick="location.href='emailban.html'">이메일무단수집거부</p>
+                <p onclick="location.href='policy.html'">개인정보처리방침</p>
+            </div>
+            <div class="footer_box">
+                <p >상호명:BACKPACK TOUR</p>
+                <p>대표자:김가방</p>
+                <p>개인정보책임자:정주머니</p>
+                <p>상담전화:1234-5678</p>
+                <p>주소: 대한민국 부산광역시 아버지구 가방에들어가신다.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+<script>
+    function send(){
+        if(frm1.departure.value==""){alert("출발지을 지정하세요");frm1.departure.focus();return false;}
+        if(frm1.destination.value==""){alert("도착지을 지정하세요");frm1.destination.focus(); return false;}
+        if(frm1.date1.value==""){alert("출발일을 지정하세요");frm1.date1.focus();return false;}
+        if(frm1.date2.value==""){alert("도착일을 지정하세요");frm1.date2.focus(); return false;}
+        document.frm1.submit();
+    }
+    function login(){
+        if(loginfrm.usid.value==""){alert("ID또는 E-mail계정을 입력하세요.");loginfrm.usid.focus(); return false;}
+        if(loginfrm.uspw.value==""){alert("비밀번호를 입력하세요.");loginfrm.uspw.focus(); return false;}
+        document.loginfrm.submit();
+    }
+    function pop(){
+        window.open('signup.html','_blank','left=700,top=200,width=500,height=500',);
+    }
+    function pop2(){
+        window.open('id.html','_blank','left=700,top=200,width=500,height=500');
+    }
+    function pop3(){
+        window.open('idpw2.html','_blank','left=700,top=200,width=500,height=500');
+    }
+    
+</script>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BACKPACK"SEOUL&GYEONGGI-DO"</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png"></a>
+        </div>
+        <ul class="nav">
+            <li onclick="location.href='backpackmain.html'">Backpack Tour</li>
+            <li onclick="location.href='koreamain.html'">Trip To Korea</li>
+            <li onclick="location.href='euromain.html'">Trip To Europe</li>
+        </ul>
+    <div id="modalwindow">
+        <input type="checkbox" id="login" class="checkbox">
+        <label for="login" class="login_text">Login<img src="images/login2.png"style="width:45px; height:45px;"></label>
+        <div class="loginwrap">
+        <div class="loginmain">
+            <label for="login" class="loginclose">X</label>
+            <div id="login">
+                <form name="loginfrm" method="post" action="">
+                    <table class="logintable">
+                        <tr>
+                            <td colspan="3">
+                                <img src="images/logo.png">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="text" class="logintable_t"
+                                 placeholder="ID또는 E-mail계정을 입력해주세요." name="usid">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="password" class="logintable_t"
+                                placeholder="비밀번호를 입력해주세요." name="uspw">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="button" class="login_bt"
+                                value="Login" onclick="login()">
+                            </td>
+                        </tr>
+                        <tr class="login_sub">
+                            <td onclick="pop()">회원 가입</td>
+                            <td onclick="pop2()">계정 찾기</td>
+                            <td onclick="pop3()">비밀번호 찾기</td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <label for="login" class="loginback"></label>
+        </div>
+    </div>
+</header>
+<div style="padding-bottom: 100px;">
+    <div id="seoul">
+        <div class="main_img">
+            <img src="images/seoul_text.png">
+        </div>
+        <p class="main_text2">'여긴 서울&경기도입니다.'<br>
+            대한민국의 중심<span style="font-size: 55px; color: rgb(253, 216, 6);">'K-POP'도시</span>서울&경기도
+        </p>
+    </div>
+    <div id="middle_2">
+        <div class="middle_wrap_2">
+            <div class="mini_menu">홈 > 서울&경기도 > 서울&경기도여행정보</div>
+        </div>
+    </div>
+    <div id="content" style="height:120px">
+        <div class="box4">
+            <div class="box1">
+                * BACKPACK TOUR * 가 추천하는 서울&경기도여행(서울/경기도) 
+            </div><!--con_end-->
+        </div>
+    </div>
+    <br>
+    <div id="content_3">
+        <div class="con3_title">서울 어린이 대공원(서울)</div>
+        <div class="con3_box">
+            <div class="con3_box1">
+                <div class="con3_img">
+                    <img src="images/s4.jpg">
+                </div>
+            </div>
+            <div class="con3_box1">
+                <ul class="con3_text">
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">가족 or 연인 or 친구</li>
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">함께 놀이기구 즐기고!각종 동물들과 만남!</li>
+                    <br>
+                    <h3 style="color: rgb(68, 67, 67);">#서울 어린이 대공원 정보</h3>
+                    <li style="color: gray;">- 운영시간 :놀이동산 05:00~22:00 (연중무휴)<br>
+                                               - 운영시간 : 동물원 10:00~17:00까지</li>
+                    <li style="color: gray;">-공원입장(무료)/놀이동산(자유이용권)27,000원<br>
+                                               -놀이동산(1회이용권)어른5,000원/청소년4,000원/어린이3,500원    
+                    <li style="color: gray;">- 주소지 : 서울 광진구 능동로 216</li>
+                    <li style="color: gray;">-홈페이지 :<a href="www.sisul.or.kr/childrenpark">www.sisul.or.kr/childrenpark</a></li>
+                    <li style="color: gray;"> - 문의전화 : 02-450-9311(주차가능)</li>
+                </ul>
+            </div>
+        </div>
+    </div><!--content1_end-->
+    <br>
+    <br>
+    <div id="content_3">
+        <div class="con3_title">포천 허브아일랜드(경기도)</div>
+        <div class="con3_box">
+            <div class="con3_box1">
+                <div class="con3_img">
+                    <img src="images/s5.jpg">
+                </div>
+            </div>
+            <div class="con3_box1">
+                <ul class="con3_text">
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">허브로 행복한 세상을 만들자! </li>
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">지중해 생활태마<br>'세계최초'허브박물관 </li>
+                    <br>
+                    <h3 style="color: rgb(68, 67, 67);">#포천 허브아일랜드 정보</h3>
+                    <li style="color: gray;">-365일 꺼지지 않는 '불빛축제'</li>
+                    <li style="color: gray;">-평일(10:00~21:00)/토요일(10:00~23:00)<br>
+                                               -일요일 : 10:00 ~ 22:00/정기휴무:매주 수요일</li>
+                    <li style="color: gray;">- 주소지 : 경기 포천시 신북면 청신로947번길 35</li>
+                    <li style="color: gray;">-대인:9000원/소인:7000원</li>
+                    <li style="color: gray;">-홈페이지 :<a href="http://www.herbisland.co.kr/">http://www.herbisland.co.kr/</a></li>
+                    <li style="color: gray;"> - 문의전화 : 031-535-649</li>
+                </ul>
+            </div>
+
+        </div>
+    </div><!--content2_end-->
+    <br>
+    <br>
+    <div class="guide_icon"onclick="location.href='reservation_seoul.html'"></div>
+    <div id="content_3">
+        <div class="con3_title">세빛섬 튜브스터(서울)</div>
+        <div class="con3_box">
+            <div class="con3_box1">
+                <div class="con3_img">
+                    <img src="images/s6.jpg">
+                </div>
+            </div>
+            <div class="con3_box1">
+                <ul class="con3_text">
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">야경운치직접 '보트를 운전'!!</li>
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">신개념 프리미엄 수상레저 어트랙션~!</li>
+                    <br>
+                    <h3 style="color: rgb(68, 67, 67);">#세빛섬 튜브스터 정보</h3>
+                    <li style="color: gray;">- 보트당(최대6인)계산;(30분/60분)<br>＊이용요금/시간 :네이버페이 참고 하세요</li>
+                    <li style="color: gray;">- 주소지 : 서울 서초구 올림픽대로 683 튜브스터 코리아</li>
+                    <li style="color: gray;">   *근처 '한강공원'도 추천(주차장 같이사용)</li>
+                    <li style="color: gray;">   ＊코로나 백신 접종자 포함(최대6명가능)</li>
+                    <li style="color: gray;"> - 문의전화 : 070-4288-1363</li>
+                </ul>
+            </div>
+        </div>
+    </div><!--content3_end-->
+    <br>
+    <br>
+    <div class="guide_icon"></div>
+    <div id="content_3">
+        <div class="con3_title">송월동 송화동화마을(경기도)</div>
+        <div class="con3_box">
+            <div class="con3_box1">
+                <div class="con3_img">
+                    <img src="images/s7.jpg">
+                </div>
+            </div>
+            <div class="con3_box1">
+                <ul class="con3_text">
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);"> '촌스러움에 중독'</li>
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">'동심'으로 돌아가는 동화속 세상!!</li>
+                    <br>
+                    <h3 style="color: rgb(68, 67, 67);">#송월동 송화동화마을 정보</h3>
+                    <li style="color: gray;">-인천역↔제물포고등학교 총거리 860m</li>
+                    <li style="color: gray;"> ＊이용요금 :무료/체험비는 별도</li>
+                    <li style="color: gray;"> ＊이용시간 :24시(연중무휴)
+                    <li style="color: gray;">- 주소지 : 인천 중구 송월동3가</li>
+                    <li style="color: gray;">-홈페이지:<a href="http://www.fairtalevillag.co.kr/">http://www.fairtalevillag.co.kr/</a></li>
+                    <li style="color: gray;"> - 문의전화 : 032-764-7494</li>
+                </ul>
+            </div>
+        </div>
+    </div><!--content3_end-->
+    <br>
+    <br>
+    <div class="guide_icon"onclick="location.href='reservation_seoul.html'"></div>
+    <div id="content_3">
+        <div class="con3_title">송파구 롯데월드타워(서울)</div>
+        <div class="con3_box">
+            <div class="con3_box1">
+                <div class="con3_img">
+                    <img src="images/s8.jpg">
+                </div>
+            </div>
+            <div class="con3_box1">
+                <ul class="con3_text">
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);"> '123층'거대한 수직도시!!서울의 렌드마크!</li>
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">가장 높은 곳에서 느끼는 도시의 '낮과밤' </li>
+                    <br>
+                    <h3 style="color: rgb(68, 67, 67);">#송파구 롯데월드타워 정보</h3>
+                    <li style="color: gray;"> ＊이용요금 :무료/체험비는 별도</li>
+                    <li style="color: gray;"> ＊롯데면세점09:00~20:30(연중무휴)/쇼핑몰:10:30~22:00(연중무휴)<br>
+                                                ＊롯데마트:10:00~23:00(격주 일요일 휴무)<br>
+                                                ＊아쿠아리움:10:00~20:00(연중무휴)<br>
+                                                ＊에비뉴엘:10:30~20:00(월1회 정기휴무)
+                    <li style="color: gray;">- 주소지 : 서울 송파구 올림픽로 300</li>
+                    <li style="color: gray;">-홈페이지:<a href="http://www.lwt.co.kr/">http://www.lwt.co.kr/</a></li>
+                    <li style="color: gray;"> - 문의전화 :02-3213-5000</li>
+                </ul>
+            </div>
+        </div>
+    </div><!--content3_end-->
+    </div>
+    <footer>
+        <div id="footer_wrap">
+            <div class="footer_box"style="display: flex;">
+                <p onclick="location.href='refund2.html'"> 취소 환불 규정</p>
+                <p onclick="location.href='emailban.html'">이메일무단수집거부</p>
+                <p onclick="location.href='policy.html'">개인정보처리방침</p>
+            </div>
+            <div class="footer_box">
+                <p >상호명:BACKPACK TOUR</p>
+                <p>대표자:김가방</p>
+                <p>개인정보책임자:정주머니</p>
+                <p>상담전화:1234-5678</p>
+                <p>주소: 대한민국 부산광역시 아버지구 가방에들어가신다.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+<script>
+    function send(){
+        if(frm1.departure.value==""){alert("출발지을 지정하세요");frm1.departure.focus();return false;}
+        if(frm1.destination.value==""){alert("도착지을 지정하세요");frm1.destination.focus(); return false;}
+        if(frm1.date1.value==""){alert("출발일을 지정하세요");frm1.date1.focus();return false;}
+        if(frm1.date2.value==""){alert("도착일을 지정하세요");frm1.date2.focus(); return false;}
+        document.frm1.submit();
+    }
+    function login(){
+        if(loginfrm.usid.value==""){alert("ID또는 E-mail계정을 입력하세요.");loginfrm.usid.focus(); return false;}
+        if(loginfrm.uspw.value==""){alert("비밀번호를 입력하세요.");loginfrm.uspw.focus(); return false;}
+        document.loginfrm.submit();
+    }
+    function pop(){
+        window.open('signup.html','_blank','left=700,top=200,width=500,height=500',);
+    }
+    function pop2(){
+        window.open('id.html','_blank','left=700,top=200,width=500,height=500');
+    }
+    function pop3(){
+        window.open('idpw2.html','_blank','left=700,top=200,width=500,height=500');
+    }
+    
+</script>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BACKPACK</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png"></a>
+        </div>
+        <ul class="nav">
+            <li onclick="location.href='backpackmain.html'">Backpack Tour</li>
+            <li onclick="location.href='koreamain.html'">Trip To Korea</li>
+            <li onclick="location.href='euromain.html'">Trip To Europe</li>
+        </ul>
+    <div id="modalwindow">
+        <input type="checkbox" id="login" class="checkbox">
+        <label for="login" class="login_text">Login<img src="images/login2.png"style="width:45px; height:45px;"></label>
+        <div class="loginwrap">
+        <div class="loginmain">
+            <label for="login" class="loginclose">X</label>
+            <div id="login">
+                <form name="loginfrm" method="post" action="">
+                    <table class="logintable">
+                        <tr>
+                            <td colspan="3">
+                                <img src="images/logo.png">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="text" class="logintable_t"
+                                 placeholder="ID또는 E-mail계정을 입력해주세요." name="usid">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="password" class="logintable_t"
+                                placeholder="비밀번호를 입력해주세요." name="uspw">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="button" class="login_bt"
+                                value="Login" onclick="login()">
+                            </td>
+                        </tr>
+                        <tr class="login_sub">
+                            <td onclick="pop()">회원 가입</td>
+                            <td onclick="pop2()">계정 찾기</td>
+                            <td onclick="pop3()">비밀번호 찾기</td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <label for="login" class="loginback"></label>
+        </div>
+    </div>
+</header>
+   <div id="coronamain">
+       <div class="backpack_title"> WELCOME TO<br> BACKPACK TOUR </div>
+   </div>
+   <div id="backpack_content" style="height: 150px;">
+        <div class="koreacontent_title">
+            <span style="font-weight: bold;font-size: 1.4em;">여러분의 여행을 BACKPACK TOUR와  함께하세요<br></span>
+            <a href="index.html"> Home</a>> <a href="backpackmain.html">BACKPACK TOUR</a> > <a  style="font-weight: bold;" href="corona.html">코로나 관련 문의사항</a>
+        </div>
+    </div>
+   <div id="corona">
+    <ul class="prepare_nav">
+        <li onclick="location.href='corona.html'">국내 코로나19 상황</li>
+        <li onclick="location.href='corona2.html'"> 자가격리 면제국가</li>
+        <li onclick="location.href='coronaqna.html'"style="background:linear-gradient(to left,#263c8b,goldenrod);color:white;">코로나19 관련 여행 QnA</li>
+    </ul>
+        <img src="images/covid192.png" style="position: relative;left: 30%;top: 20%;">
+       <table class="corona2">
+           <tr>
+               <th>
+                여행 중 어떻게 코로나 바이러스로부터 안전을 지킬 수 있나요?
+               </th>
+           </tr>
+           <tr>
+            <td>
+                알려진 바와 같이, <span style="font-weight: bold;">코로나 예방법 중 가장 중요한 것은 손 씻기입니다. 비누와 물 또는 알코올 성분이 함유된 젤 타입의 손 세정제를 이용해 씻기를 추천드립니다.</span> 또한, 씻지 않은 손으로 얼굴을 만지지 않도록 하고, 타인과 적절히 거리를 두는 것 역시 꼭 기억하세요. 
+            </td>
+            </tr>
+            <tr>
+                <th>
+                    코로나로 인해 여행을 취소하고 싶습니다. 어떤 절차를 거쳐야 하며 어떻게 환불받을 수 있나요?
+                </th>
+            </tr>
+            <tr>
+             <td>
+                가장 먼저 <span style="font-weight: bold;">예약한 항공사와 호텔, 여행사 등에 연락해야 합니다.</span> 어디서 예약했는지 기억이 나지 않을 경우엔, 통장 또는 카드 사용 내역을 조회하거나 예약 확인 이메일에서 업체명을 확인할 수 있습니다. 또한, 온라인 여행사(OTA)를 통해 예약을 했다면, 해당 여행사의 정책을 확인하거나 고객 센터에 연락해 관련 정보를 문의하시기를 권합니다. 연락 정보를 포함한 더 자세한 사항을 알고 싶다면,<span style="font-weight: bold;">대표전화로 연락주시거나, BACKPACKTOUR의 취소 환불규정을 확인해 보세요.</span>
+             </td>
+             </tr>
+             <tr>
+                <th>
+                    코로나로 인해 제 항공편이 취소되었습니다. 환불받을 수 있나요?
+                </th>
+            </tr>
+            <tr>
+             <td>
+                <span style="font-weight: bold;">예약하신 항공사 또는 온라인 여행사에 연락하세요.</span> 코로나19의 영향으로 평소보다 답변을 받기까지 시간이 더 오래 걸릴 수도 있는 상황 양해 부탁드립니다. 온라인 여행사에 따라 환불수수료를 부과할 수도 있습니다. 여행 제공업체에서 환불이 불가능하다고 하거나 거래를 중단한 경우, 예약 시 결제하신 카드 회사로 연락하는 것이 도움이 될 수 있습니다. 만일 여행 보험을 들으셨다면, 여행 보험 업체에도 확인해 주세요. 
+             </td>
+             </tr>
+             <tr>
+                <th>
+                    여행 후 자가격리를 해야 하나요?
+                </th>
+            </tr>
+            <tr>
+             <td>
+                전 세계 모든 나라에서 입국하는 내·외국인은 모두 2주 자가격리 의무화를 시행하게 됩니다. 내국인 기준, 유증상자는 공항에서 진단검사 후 양성이라면 병원 또는 생활치료센터로 이송되고, 음성일 경우, 14일간 자가격리를 해야 합니다.
+단, <span style="font-weight: bold;">국내 예방접종 완료 시 자가격리 조치가 완화됩니다.(21.5.5 시행) 대상자는 국내에서 예방접종 완료 후, 출국했다가 귀국한 여행자입니다. 귀국 후 코로나19 검사 결과가 음성이고, 증상이 없으면 자가격리가 면제됩니다.</span> 다만 남아공, 브라질 등 변이 바이러스가 유행하는 국가에서 입국하는 경우에는 제외됩니다.
+             </td>
+             </tr>
+       </table>
+   </div>
+   <footer>
+    <div id="footer_wrap">
+        <div class="footer_box"style="display: flex;">
+            <p onclick="location.href='refund2.html'"> 취소 환불 규정</p>
+            <p onclick="location.href='emailban.html'">이메일무단수집거부</p>
+            <p onclick="location.href='policy.html'">개인정보처리방침</p>
+        </div>
+        <div class="footer_box">
+            <p >상호명:BACKPACK TOUR</p>
+            <p>대표자:김가방</p>
+            <p>개인정보책임자:정주머니</p>
+            <p>상담전화:1234-5678</p>
+            <p>주소: 대한민국 부산광역시 아버지구 가방에들어가신다.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+<script>
+    function send(){
+        if(frm1.departure.value==""){alert("출발지을 지정하세요");frm1.departure.focus();return false;}
+        if(frm1.destination.value==""){alert("도착지을 지정하세요");frm1.destination.focus(); return false;}
+        if(frm1.date1.value==""){alert("출발일을 지정하세요");frm1.date1.focus();return false;}
+        if(frm1.date2.value==""){alert("도착일을 지정하세요");frm1.date2.focus(); return false;}
+        document.frm1.submit();
+    }
+    function login(){
+        if(loginfrm.usid.value==""){alert("ID또는 E-mail계정을 입력하세요.");loginfrm.usid.focus(); return false;}
+        if(loginfrm.uspw.value==""){alert("비밀번호를 입력하세요.");loginfrm.uspw.focus(); return false;}
+        document.loginfrm.submit();
+    }
+    function pop(){
+        window.open('signup.html','_blank','left=700,top=200,width=500,height=500',);
+    }
+    function pop2(){
+        window.open('id.html','_blank','left=700,top=200,width=500,height=500');
+    }
+    function pop3(){
+        window.open('idpw2.html','_blank','left=700,top=200,width=500,height=500');
+    }
+    
+</script>

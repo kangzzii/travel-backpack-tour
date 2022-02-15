@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BACKPACK TOUR LOGIN</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="refund">
+        <input type="button" value="환불규정 확인하기" class="refundbt" onclick="pop2()">
+    </div>
+</body>
+</html>
+<script>
+    function send(){
+        if(frm1.usid.value==""){alert("Email혹은 ID를 입력하세요"); frm1.usid.focus();return false;}
+        
+        if(frm1.usname.value==""){alert("이름을 입력하세요");frm1.usname.focus();return false;}
+        if(frm1.ustel.value==""){alert("전화번호를 입력하세요");frm1.ustel.focus();return false;}
+        if(frm1.uscheck.value==""){alert("인증번호를 입력하세요");frm1.uscheck.focus();return false;}
+        {document.frm1.submit();}
+    }
+    function pop2(){
+        window.open('refund2.html','_blank',)
+    }
+</script>

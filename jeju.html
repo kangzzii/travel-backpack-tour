@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BACKPACK"JEJU"</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png"></a>
+        </div>
+        <ul class="nav">
+            <li onclick="location.href='backpackmain.html'">Backpack Tour</li>
+            <li onclick="location.href='koreamain.html'">Trip To Korea</li>
+            <li onclick="location.href='euromain.html'">Trip To Europe</li>
+        </ul>
+    <div id="modalwindow">
+        <input type="checkbox" id="login" class="checkbox">
+        <label for="login" class="login_text">Login<img src="images/login2.png"style="width:45px; height:45px;"></label>
+        <div class="loginwrap">
+        <div class="loginmain">
+            <label for="login" class="loginclose">X</label>
+            <div id="login">
+                <form name="loginfrm" method="post" action="">
+                    <table class="logintable">
+                        <tr>
+                            <td colspan="3">
+                                <img src="images/logo.png">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="text" class="logintable_t"
+                                 placeholder="ID또는 E-mail계정을 입력해주세요." name="usid">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="password" class="logintable_t"
+                                placeholder="비밀번호를 입력해주세요." name="uspw">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="button" class="login_bt"
+                                value="Login" onclick="login()">
+                            </td>
+                        </tr>
+                        <tr class="login_sub">
+                            <td onclick="pop()">회원 가입</td>
+                            <td onclick="pop2()">계정 찾기</td>
+                            <td onclick="pop3()">비밀번호 찾기</td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <label for="login" class="loginback"></label>
+        </div>
+    </div>
+</header>
+<div style="padding-bottom: 100px;">
+    <div id="jeju">
+        <div class="main_img">
+            <img src="images/jeju_text.png" style="opacity: 50%;">
+        </div>
+        <p class="main_text2">'소민나민 몰라~재길재길 보질보질 혼저옵서예'<br>
+            오감행복!!<span style="font-size: 55px; color: rgb(241, 144, 34);">한국 최고의 섬</span>제주도
+        </p>
+    </div>
+    <div id="middle_2">
+        <div class="middle_wrap_2">
+            <div class="mini_menu">홈 > 제주도 > 제주도여행정보</div>
+        </div>
+    </div>
+    <div id="content" style="height:120px">
+        <div class="box4">
+            <div class="box1">
+                * BACKPACK TOUR * 가 추천하는 제주도여행 
+            </div><!--con_end-->
+        </div>
+    </div>
+    <br>
+    <div id="content_3">
+        <div class="con3_title">구좌읍 스누피 가든</div>
+        <div class="con3_box">
+            <div class="con3_box1">
+                <div class="con3_img">
+                    <img src="images/han5.jpg">
+                </div>
+            </div>
+            <div class="con3_box1">
+                <ul class="con3_text">
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">온가족 or 연인들 모두가 좋아할!!</li>
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">자연과 어울러진 캐리터들과 함께 즐기세요</li>
+                    <br>
+                    <h3 style="color: rgb(68, 67, 67);">#제주시 구좌읍 "스누피가든" 정보</h3>
+                    <li style="color: gray;">- 운영시간 : 하절기(3월~9월)09:00~19:00<br>- 운영시간 : 동절기(10월~2월)09:00~18:00</li>
+                    <li style="color: gray;">   ＊매표마감 : 테마홀 종료 1시간전 입장마감/(연중무휴)/주차무료</li>
+                    <li style="color: gray;">   ＊입장료 :성인 18000원//청소년 15,000원//소인 12,000원</li>
+                    <li style="color: gray;">- 주소지 : 제주 제주시 구좌읍 송당리 2303-3</li>
+                    <li style="color: gray;">   ＊ 관람소요시간:약 2시간~2시간30분(여유롭게 둘러보시면 됩니다)</li>
+                    <li style="color: gray;"> - 문의전화 : 064-903-1111</li>
+                </ul>
+            </div>
+        </div>
+    </div><!--content1_end-->
+    <br>
+    <br>
+    <div id="content_3">
+        <div class="con3_title">서귀포 잠수함</div>
+        <div class="con3_box">
+            <div class="con3_box1">
+                <div class="con3_img">
+                    <img src="images/han6.jpg">
+                </div>
+            </div>
+            <div class="con3_box1">
+                <ul class="con3_text">
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">아시아에서 가장 아름다운 해저를!!</li>
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">형형 색색의 산호초와 물고기때를 만나보세요</li>
+                    <br>
+                    <h3 style="color: rgb(68, 67, 67);">#서홍동 "서귀포 잠수함" 정보</h3>
+                    <li style="color: gray;">-요금:대인(만14세이상)65,000원/소인(만3세~만14세미만)44,000원<br>
+                                               -도립공원별도:성인1,000원/청소년800원/소인500원</li>
+                    <li style="color: gray;">#참고 :천지연 폭포 입구에서 바닷가 방향으로 300미터 거리 위치</li>
+                    <li style="color: gray;">- 주소지 : 제주 서귀포시 남성중로 40</li>
+                    <li style="color: gray;">- 홈페이지 :<a href="https://goo.gl/mJjg8v"> https://goo.gl/mJjg8v</a> (인스타/페이스북 검색가능)</li>
+                    <li style="color: gray;">-매일 09:20 - 16:00 (각각 운항시간 상이)/기상에따라다름</li>
+                    <li style="color: gray;"> - 문의전화 : 0507-1448-6061</li>
+                </ul>
+            </div>
+        </div>
+    </div><!--content2_end-->
+    <br>
+    <br>
+    <div class="guide_icon"onclick="location.href='reservation_jeju.html'"></div>
+    <div id="content_3">
+        <div class="con3_title">한라산 관음사</div>
+        <div class="con3_box">
+            <div class="con3_box1">
+                <div class="con3_img">
+                    <img src="images/han7.jpg">
+                </div>
+            </div>
+            <div class="con3_box1">
+                <ul class="con3_text">
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">200여년 제주의 중심에서 지키고있는 사찰</li>
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">다양한 불상 그리고<br>지친마음 안정시켜주는 자연속 목탁소리</li>
+                    <br>
+                    <h3 style="color: rgb(68, 67, 67);">#한라산 관음사 정보</h3>
+                    <li style="color: gray;">-한라산 650m 즐기는 사찰체험 연중무휴</li>
+                    <li style="color: gray;">    템플스테이(혼자부터)가능 </li>
+                    <li style="color: gray;">- 주소지 : 제주 제주시 산록북로 660</li>
+                    <li style="color: gray;">- 주차가능 / 남&녀 화장실 구분</li>
+                    <li style="color: gray;">＊ 교통정보 :휴대폰 제주버스정보시스템 어플 설치및 시간표참고</li>
+                    <li style="color: gray;"> - 문의전화 : 064-724-6830</li>
+                </ul>
+            </div>
+        </div>
+    </div><!--content3_end-->
+    <br>
+    <br>
+    <div id="content_3">
+        <div class="con3_title">수목원길 야시장</div>
+        <div class="con3_box">
+            <div class="con3_box1">
+                <div class="con3_img">
+                    <img src="images/han8.jpg">
+                </div>
+            </div>
+            <div class="con3_box1">
+                <ul class="con3_text">
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">날이 어두워지면 기대만발!!</li>
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">맛있는 음식& 화려한 조명!!곳곳의 포토존!!</li>
+                    <br>
+                    <h3 style="color: rgb(68, 67, 67);">#수목원길 야시장 정보</h3>
+                    <li style="color: gray;">- 주차가능,애완동물 동반가능</li>
+                    <li style="color: gray;">#축제이벤트 :'조명축제' &'할로윈 파티'</li>
+                    <li style="color: gray;">- 주소지 : 제주 제주시 은수길 69</li>
+                    <li style="color: gray;">- 홈페이지 :<a href="http://www.sumokwonpark.com/"> http://www.sumokwonpark.com/</a> </li>
+                    <li style="color: gray;">-매일 18:00 - 22:00/기상에따라다름</li>
+                    <li style="color: gray;"> - 문의전화 : 0507-1448-6061</li>
+                </ul>
+            </div>
+        </div>
+    </div><!--content2_end-->
+    </div>
+    <footer>
+        <div id="footer_wrap">
+            <div class="footer_box"style="display: flex;">
+                <p onclick="location.href='refund2.html'"> 취소 환불 규정</p>
+                <p onclick="location.href='emailban.html'">이메일무단수집거부</p>
+                <p onclick="location.href='policy.html'">개인정보처리방침</p>
+            </div>
+            <div class="footer_box">
+                <p >상호명:BACKPACK TOUR</p>
+                <p>대표자:김가방</p>
+                <p>개인정보책임자:정주머니</p>
+                <p>상담전화:1234-5678</p>
+                <p>주소: 대한민국 부산광역시 아버지구 가방에들어가신다.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+<script>
+    function send(){
+        if(frm1.departure.value==""){alert("출발지을 지정하세요");frm1.departure.focus();return false;}
+        if(frm1.destination.value==""){alert("도착지을 지정하세요");frm1.destination.focus(); return false;}
+        if(frm1.date1.value==""){alert("출발일을 지정하세요");frm1.date1.focus();return false;}
+        if(frm1.date2.value==""){alert("도착일을 지정하세요");frm1.date2.focus(); return false;}
+        document.frm1.submit();
+    }
+    function login(){
+        if(loginfrm.usid.value==""){alert("ID또는 E-mail계정을 입력하세요.");loginfrm.usid.focus(); return false;}
+        if(loginfrm.uspw.value==""){alert("비밀번호를 입력하세요.");loginfrm.uspw.focus(); return false;}
+        document.loginfrm.submit();
+    }
+    function pop(){
+        window.open('signup.html','_blank','left=700,top=200,width=500,height=500',);
+    }
+    function pop2(){
+        window.open('id.html','_blank','left=700,top=200,width=500,height=500');
+    }
+    function pop3(){
+        window.open('idpw2.html','_blank','left=700,top=200,width=500,height=500');
+    }
+    
+</script>

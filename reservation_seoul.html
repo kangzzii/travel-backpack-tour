@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BACKPACK</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png"></a>
+        </div>
+        <ul class="nav">
+            <li onclick="location.href='backpackmain.html'">Backpack Tour</li>
+            <li onclick="location.href='koreamain.html'">Trip To Korea</li>
+            <li onclick="location.href='euromain.html'">Trip To Europe</li>
+        </ul>
+    <div id="modalwindow">
+        <input type="checkbox" id="login" class="checkbox">
+        <label for="login" class="login_text">Login<img src="images/login2.png"style="width:45px; height:45px;"></label>
+        <div class="loginwrap">
+        <div class="loginmain">
+            <label for="login" class="loginclose">X</label>
+            <div id="login">
+                <form name="loginfrm" method="post" action="">
+                    <table class="logintable">
+                        <tr>
+                            <td colspan="3">
+                                <img src="images/logo.png">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="text" class="logintable_t"
+                                 placeholder="ID또는 E-mail계정을 입력해주세요." name="usid">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="password" class="logintable_t"
+                                placeholder="비밀번호를 입력해주세요." name="uspw">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="button" class="login_bt"
+                                value="Login" onclick="login()">
+                            </td>
+                        </tr>
+                        <tr class="login_sub">
+                            <td onclick="pop()">회원 가입</td>
+                            <td onclick="pop2()">계정 찾기</td>
+                            <td onclick="pop3()">비밀번호 찾기</td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <label for="login" class="loginback"></label>
+        </div>
+    </div>
+</header>
+<div id="koreamain">
+    <p class="koreamain_text">Trip To Korea</p>
+</div>
+<div id="koreacontent"style="height: 120px;">
+    <div class="koreacontent_title">
+        <span style="font-weight: bold;font-size: 1.4em;">BACKPACK TOUR여행정보<br></span>
+               Home> Trip to Korea
+    </div>
+</div>
+<div id="reservation">
+        <div class="reservation_title">
+           <b>[서울 경기] 멋진 현대건물 과 자연 조화 '밤이 화려한 도시' - 2박3일</b>  
+        </div>
+        <div class="reservation_img">
+            <img src="images/s8.jpg" style="height: 300px;">
+            <p style="margin:20px 0 0 20px; box-shadow: 3px 0px 3px lightgray">
+                <br>
+                <span style="font-weight: bold;">투어 설명</span><br><br>
+                서울 신사 ABC호텔 투숙 조식포함<br>
+                세빛섬 튜브스터(서울) - 보트 대여료 포함<br>
+                포천 허브아일랜드(경기도) - 입장료 포함<br>
+                송월동 송화동화마을(경기도) - 체험비 포함<br>
+                <br>
+            </p>
+        </div>
+        <div class="calendar">
+            <img src="images/calendar11.png">
+            <label for="select1" class="select1"style="background-color: rgb(213, 250, 238);opacity: 70%;top:65px;">
+                <br><b style="color: black;">부산출발</b><br> 340,000원<br><p style="color: rgb(46, 3, 204);opacity: 90%;">(항공+전세비)</label>
+            <label for="select2" class="select2"style="background-color: rgb(253, 247, 191);opacity: 70%;top:260px;left:2px" >
+                <br><b style="color: black;">
+                    <STRIKE> 서울출발</STRIKE></b> <br><STRIKE>250,000원</STRIKE><br>마감</label>
+                
+        </div>
+</div>
+<div id="reservation">
+    <table class="reservation_table">
+        <tr>
+            <th>출/도착정보</th>
+            <th>항공</th>
+            <th>여행기간</th>
+            <th>상품명</th>
+            <th>상품가격</th>
+            <th><input type="checkbox"checked >예약하기</th>
+        </tr>
+        <tr>
+            <td><span style="color: lightcoral;">11월 3일 12:00</span>
+                <br>11월 3일 12:00
+            <td><img src="images/air1.jpg" style="width: 100px;">
+                    <br>에어부산</td>
+            
+            <td>2박3일</td>
+            <td><b>[서울 경기] 멋진 현대건물 과 자연 조화 '밤이 화려한 도시' - 부산출발 -  2박3일</b> </td>
+            <td>250,000원</td>
+            <td><input type="checkbox" id="select2">예약하기</td>
+        </tr>
+        <tr>
+            <td><span style="color: lightcoral;">11월 24일 13:40</span>
+                <br>11월 24일 14:40
+            </td>
+            <td>X</td>
+            <td>2박3일</td>
+            <td><STRIKE>[서울 경기]  멋진 현대건물 과 자연 조화 '밤이 화려한 도시' - 서울출발 -  2박3일</STRIKE></td>
+            <td> <STRIKE>340,000원</STRIKE></td>
+            <td><input type="checkbox" id="select1">예약하기</td>
+        </tr>
+        
+        <tr>
+            <td colspan="6">
+                <input type="button" value="예약하기" class="reservation_bt">
+            </td>
+        </tr>
+    </table>
+    
+</div>
+<footer>
+    <div id="footer_wrap">
+        <div class="footer_box"style="display: flex;">
+            <p onclick="location.href='refund2.html'"> 취소 환불 규정</p>
+            <p onclick="location.href='emailban.html'">이메일무단수집거부</p>
+            <p onclick="location.href='policy.html'">개인정보처리방침</p>
+        </div>
+        <div class="footer_box">
+            <p >상호명:BACKPACK TOUR</p>
+            <p>대표자:김가방</p>
+            <p>개인정보책임자:정주머니</p>
+            <p>상담전화:1234-5678</p>
+            <p>주소: 대한민국 부산광역시 아버지구 가방에들어가신다.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+<script>
+    function send(){
+        if(frm1.departure.value==""){alert("출발지을 지정하세요");frm1.departure.focus();return false;}
+        if(frm1.destination.value==""){alert("도착지을 지정하세요");frm1.destination.focus(); return false;}
+        if(frm1.date1.value==""){alert("출발일을 지정하세요");frm1.date1.focus();return false;}
+        if(frm1.date2.value==""){alert("도착일을 지정하세요");frm1.date2.focus(); return false;}
+        document.frm1.submit();
+    }
+    function login(){
+        if(loginfrm.usid.value==""){alert("ID또는 E-mail계정을 입력하세요.");loginfrm.usid.focus(); return false;}
+        if(loginfrm.uspw.value==""){alert("비밀번호를 입력하세요.");loginfrm.uspw.focus(); return false;}
+        document.loginfrm.submit();
+    }
+    function pop(){
+        window.open('signup.html','_blank','left=700,top=200,width=500,height=500',);
+    }
+    function pop2(){
+        window.open('id.html','_blank','left=700,top=200,width=500,height=500');
+    }
+    function pop3(){
+        window.open('idpw2.html','_blank','left=700,top=200,width=500,height=500');
+    }
+    
+</script>

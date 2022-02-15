@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BACKPACK</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png"></a>
+        </div>
+        <ul class="nav">
+            <li onclick="location.href='backpackmain.html'">Backpack Tour</li>
+            <li onclick="location.href='koreamain.html'">Trip To Korea</li>
+            <li onclick="location.href='euromain.html'">Trip To Europe</li>
+        </ul>
+    <div id="modalwindow">
+        <input type="checkbox" id="login" class="checkbox">
+        <label for="login" class="login_text">Login<img src="images/login2.png"style="width:45px; height:45px;"></label>
+        <div class="loginwrap">
+        <div class="loginmain">
+            <label for="login" class="loginclose">X</label>
+            <div id="login">
+                <form name="loginfrm" method="post" action="">
+                    <table class="logintable">
+                        <tr>
+                            <td colspan="3">
+                                <img src="images/logo.png">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="text" class="logintable_t"
+                                 placeholder="ID또는 E-mail계정을 입력해주세요." name="usid">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="password" class="logintable_t"
+                                placeholder="비밀번호를 입력해주세요." name="uspw">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="button" class="login_bt"
+                                value="Login" onclick="login()">
+                            </td>
+                        </tr>
+                        <tr class="login_sub">
+                            <td onclick="pop()">회원 가입</td>
+                            <td onclick="pop2()">계정 찾기</td>
+                            <td onclick="pop3()">비밀번호 찾기</td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <label for="login" class="loginback"></label>
+        </div>
+    </div>
+</header>
+   <div id="preparemain">
+       <div class="prepare_title"> WELCOME TO<br> BACKPACK TOUR </div>
+    </div>
+    <div id="backpack_content" style="height: 150px;">
+    <div class="koreacontent_title">
+        <span style="font-weight: bold;font-size: 1.4em;">여러분의 여행을 BACKPACK TOUR와  함께하세요<br></span>
+        <a href="index.html"> Home</a>> <a href="backpackmain.html">BACKPACK TOUR</a> > <a  style="font-weight: bold;" href="prepare.html">여행준비</a>
+    </div>
+    </div>
+    <div id="prepare">
+        <ul class="prepare_nav">
+            <li onclick="location.href='prepare.html'" >해외여행 준비물</li>
+            <li onclick="location.href='prepare2.html'"style="background:linear-gradient(to left,#263c8b,goldenrod);color:white;">국내여행 준비물</li>
+        </ul>
+        <table class="prepare1">
+            <tr>
+                <td
+                 style="font-weight: bold;text-align: center;
+                 font-size: 2em;color: white; background-color:#263c8b; ;">국내여행 필수 준비물</td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold;font-size: 1.5em;padding-top: 50px;text-align: center;">필수품</td>
+            </tr>
+            <tr>
+                <td><img src="images/prepare4.jpg" style="width: 300px;"></td>
+            </tr>
+            <tr>
+                <td style="border-bottom: 1px solid lightgray;">
+                    <br>● <span style="font-weight: bold;">주민등록증</span> : 국내 비행기를 탑승해도 여권 대신 주민등록증으로 해결 가능합니다
+                    <br>● <span style="font-weight: bold;">신용카드와 현금</span>: 물론 인출기에서 돈을 뽑아 쓸 수도 있지만, 만약에 ATM을 찾지 못할 경우를 대비해서 현금 꼭 챙겨 가세요
+                    <br>● 카메라와 충전기: 여행 하면서 가장 많이 까먹는 것이 바로 카메라 충전기 입니다. 꼭 잊지 마시고 여분 베터리와 충전기 챙기시기 바랍니다 (삼각대, 셀카봉, 유심칩, 이어폰은 필수품은 아니지만 챙겨가면 좋겠죠?)
+                    <br>● <span style="font-weight: bold;">핸드폰 충전기</span>: 이것도 정말 깜빡해서 편의점에서 사는 일이 있는데 꼭 챙겨 가세요
+                    <br>● 손 소독제와 물티슈: 판데믹으로 인해 필수품이 되버린 것 같아요
+                    <br>● <span style="font-weight: bold;">여행자 보험</span>: 국내 여행을 가시더라도 어떤 일이 일어날지 모르기 때문에 꼭 여행자 보험을 드시기 바랍니다.
+                    <br>● <span style="font-weight: bold;">비상약</span>: 갑자기 몸이 아픈 것을 대비해 타이레놀, 아시크로바 등 비상약을 꼭 챙겨 가시기 바랍니다 | 감기약, 소염제, 연고, 소화제, 진통제, 모기약, 파스 등
+            </td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold;font-size: 1.5em;padding-top: 50px;text-align: center;">세면 및 화장품</td>
+            </tr>
+            <tr>
+                <td><img src="images/prepare5.png" style="width: 300px;"></td>
+            </tr>
+            <tr>
+                <td style="border-bottom: 1px solid lightgray;">
+                    
+                    <br>사실 호텔이나 에어비엔비 또는 호스텔에 가면 들고 가야 할 것이 다릅니다.
+                    
+                    <br> <span style="font-weight: bold;">칫솔, 치약, 클렌징폼, 스킨 로션, 선크림, 면도기, 왁스, 마스크팩, 렌즈통과 세척액, 왁스...</span>
+                    기준을 호스텔로 했을 때 들고 가야할 물품을 정리 해 봤습니다.
+                    
+                    <br>샴푸, 린스, 바디워시, 수건 (수건은 종종 추가로 지불하고 빌릴 수 있는데, 굳이 돈낭비할 필요 없이 수건을 챙겨가시기 바랍니다), 자물쇠
+                    <br>여성분들은 또 생리대와 화장품, 고데기등...
+            </tr>
+            <tr>
+                <td style="font-weight: bold;font-size: 1.5em;padding-top: 50px;text-align: center;">옷은 어떻게?</td>
+            </tr>
+            <tr>
+                <td><img src="images/prepare6.png" style="width: 300px;"></td>
+            </tr>
+            <tr>
+                <td>
+                    
+                    의류는 겨울과 여름이 차이가 나겠지만 일단 일반적으로 꼭 가져가야 할 것을 정리 해 봤습니다.
+                    
+                    상의, 하의, 잠옷 또는 추리닝 (그냥 마실 나갈 때 찍찍 입고 나갈 편안한 옷), 속옷, 모자, 운동화와 슬리퍼, 양말, 스웨터 또는 가디건 (더운 날도 에어컨 때문에 종종 추워질 수 있기 때문에 꼭 챙겨 갑시다)
+                    
+                    그 이외에 바다나 수영장 있는 곳을 가시게 되면:
+                    
+                    수영 모자, 수영복, 슬리퍼, 선글라스, 부채 또는 미니 선풍기, 여행용 방수백, 우산/우비등...
+                </td>
+            </tr>
+        </table>
+    </div>
+    <footer>
+        <div id="footer_wrap">
+            <div class="footer_box"style="display: flex;">
+                <p onclick="location.href='refund2.html'"> 취소 환불 규정</p>
+                <p onclick="location.href='emailban.html'">이메일무단수집거부</p>
+                <p onclick="location.href='policy.html'">개인정보처리방침</p>
+            </div>
+            <div class="footer_box">
+                <p >상호명:BACKPACK TOUR</p>
+                <p>대표자:김가방</p>
+                <p>개인정보책임자:정주머니</p>
+                <p>상담전화:1234-5678</p>
+                <p>주소: 대한민국 부산광역시 아버지구 가방에들어가신다.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+<script>
+    function send(){
+        if(frm1.departure.value==""){alert("출발지을 지정하세요");frm1.departure.focus();return false;}
+        if(frm1.destination.value==""){alert("도착지을 지정하세요");frm1.destination.focus(); return false;}
+        if(frm1.date1.value==""){alert("출발일을 지정하세요");frm1.date1.focus();return false;}
+        if(frm1.date2.value==""){alert("도착일을 지정하세요");frm1.date2.focus(); return false;}
+        document.frm1.submit();
+    }
+    function login(){
+        if(loginfrm.usid.value==""){alert("ID또는 E-mail계정을 입력하세요.");loginfrm.usid.focus(); return false;}
+        if(loginfrm.uspw.value==""){alert("비밀번호를 입력하세요.");loginfrm.uspw.focus(); return false;}
+        document.loginfrm.submit();
+    }
+    function pop(){
+        window.open('signup.html','_blank','left=700,top=200,width=500,height=500',);
+    }
+    function pop2(){
+        window.open('id.html','_blank','left=700,top=200,width=500,height=500');
+    }
+    function pop3(){
+        window.open('idpw2.html','_blank','left=700,top=200,width=500,height=500');
+    }
+</script>

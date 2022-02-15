@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BACKPACK</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png"></a>
+        </div>
+        <ul class="nav">
+            <li onclick="location.href='backpackmain.html'">Backpack Tour</li>
+            <li onclick="location.href='koreamain.html'">Trip To Korea</li>
+            <li onclick="location.href='euromain.html'">Trip To Europe</li>
+        </ul>
+    <div id="modalwindow">
+        <input type="checkbox" id="login" class="checkbox">
+        <label for="login" class="login_text">Login<img src="images/login2.png"style="width:45px; height:45px;"></label>
+        <div class="loginwrap">
+        <div class="loginmain">
+            <label for="login" class="loginclose">X</label>
+            <div id="login">
+                <form name="loginfrm" method="post" action="">
+                    <table class="logintable">
+                        <tr>
+                            <td colspan="3">
+                                <img src="images/logo.png">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="text" class="logintable_t"
+                                 placeholder="ID또는 E-mail계정을 입력해주세요." name="usid">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="password" class="logintable_t"
+                                placeholder="비밀번호를 입력해주세요." name="uspw">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="button" class="login_bt"
+                                value="Login" onclick="login()">
+                            </td>
+                        </tr>
+                        <tr class="login_sub">
+                            <td onclick="pop()">회원 가입</td>
+                            <td onclick="pop2()">계정 찾기</td>
+                            <td onclick="pop3()">비밀번호 찾기</td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <label for="login" class="loginback"></label>
+        </div>
+    </div>
+</header>
+    
+   <div id="backpackmain">
+       <div class="backpack_title"> WELCOME TO<br> BACKPACK TOUR </div>
+   </div>
+   <div id="backpack_content" style="height: 150px;">
+        <div class="koreacontent_title">
+            <span style="font-weight: bold;font-size: 1.4em;">여러분의 여행을 BACKPACK TOUR와  함께하세요<br></span>
+            <a href="index.html"> Home</a>> <a href="backpackmain.html">ABOUT BACKPACK TOUR</a> > <a  style="font-weight: bold;" href="policy.html">개인정보처리방침</a>
+        </div>
+    </div>
+    <div id="policy">
+        <table class="policy1">
+            <tr>
+                <td style="font-size: 2em;
+                    background-color:#263c8b ;color: white;">개인정보처리방침</td>
+            </tr>
+            <tr>
+                <td style="border-bottom: 1px dashed lightgray;">개인정보처리방침 담당자 : 두루미( ☎ 051-234-5678) </td>
+            </tr>
+        </table>
+        <table class="policy2">
+            <tr>
+                <td style="font-weight:bold;">BACKPACKTOURCORP(이하 "BACKPACK TOUR")는 개인정보보호법 등 관련법령상의 개인정보보호 규정을 준수하며, <br>개인정보 처리방침은 아래와 같습니다. </td>
+            </tr>
+            <tr>
+                <td>이 개인정보처리방침은 시행일로부터 적용되며, 법령 및 방침에 따른 변경내용의 추가, 삭제 및 정정이 있는 경우에는 <br>변경사항의 시행 7일 전부터 알림사항을 통하여 고지할 것입니다. </td>
+            </tr>
+        </table>
+        <table class="policy3">
+            <tr>
+                <td style="text-align: center;color: #263c8b;font-weight: bold;">● 1조. 개인정보의 처리 목적  </td>
+            </tr>
+            <tr>
+                <td style="border-bottom: 1px solid ;">① BACKPACKTOUR는 개인정보를 고객서비스 제공 및 민원처리, 소관업무 수행 등의 목적으로 수집·보유하고 있습니다.
+                   <br> ② 수집한 개인정보는 수집 목적 외의 용도로는 사용되지 않으며, 이용 목적이 변경되는 경우에는 개인정보보호법 제18조에 따라 별도의 동의를 받는 등 필요한 조치를 이행할 예정입니다. </td>
+            </tr>
+            <tr>
+                <td style="text-align: center;color: #263c8b;font-weight: bold;">● 2조. 처리하는 개인정보의 항목 </td>
+            </tr>
+            <tr>
+                <td style="border-bottom: 1px solid ;">BACKPACKTOUR는 법령의 규정과 정보주체의 동의에 의해서만 개인정보를 수집·보유하며, 개인정보 항목 및 수집 방법은 다음과 같습니다.
+                  <br>  ※ 개인정보보호 종합지원 포털(www.privacy.go.kr) → 개인 → 개인정보민원 → 개인정보열람등 요구 → 개인정보파일 목록검색 메뉴 → 기관명에 'BACKPACKTOURCORP' 입력 후 조회 </td>
+            </tr>
+            <tr>
+                <td style="text-align: center;color: #263c8b;font-weight: bold;">● 3조. 개인정보의 자동 수립 장치의 설치, 운영 및 그 거부에 관한 사항  </td>
+            </tr>
+            <tr>
+                <td style="border-bottom: 1px solid ;" >① BACKPACKTOUR에서 제공하는 인터넷 서비스를 통하여 개인 pc 정보를 찾아내는 쿠키(cookie)를 설치, 운용할 경우도 있습니다. 쿠키란 웹 서버가 웹 브라우저에 보내어 저장했다가 서버의 부가적인 요청이 있을 때 다시 서버로 보내주는 문자열 정보를 말합니다.
+                   <br> ② BACKPACKTOUR 홈페이지에 접속을 하시면 이용자의 브라우저에 있는 쿠키의 내용을 읽고, 추가 정보를 찾아 접속에 따른 성명 등의 추가 입력 없이 서비스를 제공할 수 있습니다.
+                   <br> ③ BACKPACKTOUR 쿠키를 통해 수집하는 정보는 회원의 ID에 한하며, 그 외의 다른 정보는 수집하지 않습니다. BACKPACKTOUR가 쿠키(cookie)를 통해 수집한 회원의 ID는 다음의 목적을 위해 사용될 수 있습니다.
+                   <br>1. 개인의 관심 분야에 따라 차별화된 화면 정보를 제공
+                   <br> 2. 관심 있게 둘러본 내용들에 대한 자취를 추적하여 다음 번 접속 때 개인 맞춤 서비스를 제공
+                   <br> 3. 회원들의 습관을 분석하여 서비스 개편 등의 척도로 활용
+                   <br> ④ 홈페이지 이용자는 쿠키 설치에 대한 선택권을 가지고 계십니다. 웹 브라우저 상단의 "도구 > 인터넷옵션 > 개인정보 > 고급"에서 모든 쿠키를 다 받아들이거나, 쿠키가 설치될 때 통지를 보내도록 하거나, 아니면 모든 쿠키를 거부할 수 있습니다.
+                   <br>⑤ 홈페이지 이용자가 쿠키 설치를 거부하였을 경우 서비스 이용에 불편이 있거나, 서비스 제공에 어려움이 있을 수 있습니다.
+                   <br> ⑥ 쿠키는 브라우저의 종료시나 로그아웃 시 만료됩니다. </td>
+            </tr>
+            <tr>
+                <td style="text-align: center;color: #263c8b;font-weight: bold;">● 4조. 개인정보의 제3자 제공 </td>
+            </tr>
+            <tr>
+                <td style="border-bottom: 1px solid ;">① BACKPACKTOUR는 원칙적으로 정보주체의 개인정보 수집·이용 목적으로 명시한 범위 내에서 처리하며, 다음의 경우를제외하고는 정보주체의 사전 동의 없이 본래의 목적 범위를 초과하여 처리하거나 제3자에게 제공하지 않습니다.
+                    <br> 1. 정보주체로부터 별도의 동의를 받는 경우
+                    <br>2. 법률에 특별한 규정이 있는 경우
+                    <br>3. 정보주체 또는 법정대리인이 의사표시를 할 수 없는 상태에 있거나 주소불명 등으로 사전 동의를 받을 수 없는 경우로서명백히 정보주체 또는 제3자의 급박한 생명, 신체, 재산의 이익을 위하여 필요하다고 인정되는 경우
+                    <br> 4. 통계작성 및 학술연구 등의 목적을 위하여 필요한 경우로서 특정 개인을 알아볼 수 없는 형태로 개인정보를 제공하는 경우
+                    <br>5. 개인정보를 목적 외의 용도로 이용하거나 이를 제3자에게 제공하지 아니하면 다른 법률에서 정하는 소관 업무를 수행할 수 없는 경우로서 보호위원회의 심의·의결을 거친 경우
+                    <br>6. 조약, 그 밖의 국제협정의 이행을 위하여 외국정보 또는 국제기구에 제공하기 위하여 필요한 경우
+                    <br> 7. 범죄의 수사와 공소의 제기 및 유지를 위하여 필요한 경우
+                    <br>8. 법원의 재판업무 수행을 위하여 필요한 경우
+                    <br>9. 형 및 감호, 보호처분의 집행을 위하여 필요한 경우  </td>
+            </tr>
+            <tr>
+                <td style="text-align: center;color: #263c8b;font-weight: bold;">● 5조. 개인정보의 파기 절차 및 방법  </td>
+            </tr>
+            <tr>
+                <td style="border-bottom: 1px solid ;">BACKPACKTOUR는 개인정보파일의 보유기간 경과, 처리 목적 달성 등으로 개인정보파일이 불필요하게 되었을 때에는 지체 없이파기합니다. 다만, 다른 법령에 따라 보존하여야 하는 경우에는 그러지 않을 수 있습니다. 파기의 절차 기한 및 방법은 다음과 같습니다.
+                    <br>1. 파기절차 및 기한
+                    <br> 1) 보유기간이 경과한 개인정보는 종료일로부터 지체 없이 파기합니다.
+                    <br> 2) 개인정보파일의 처리 목적 달성, 해당 서비스의 폐지, 사업의 종료 등 그 개인정보파일이 불필요하게 되었을 때에는개인정보의 처리가 불필요한 것으로 인정되는 날로부터 지체 없이 그 개인정보파일을 파기합니다.
+                    <br>2. 파기방법
+                    <br> 1) 종이에 출력된 개인정보는 분쇄기로 분쇄하거나 소각을 통해 파기합니다.
+                    <br>2) 전자적 형태의 개인정보는 기록을 재생할 수 없는 기술적 방법을 사용합니다.  </td>
+            </tr>
+            <tr>
+                <td style="text-align: center;color: #263c8b;font-weight: bold;">● 6조. 개인정보 보호책임관 및 보호담당자 연락처   </td>
+            </tr>
+            <tr>
+                <td style="border-bottom: 1px solid ;">BACKPACKTOUR는 개인정보를 보호하고 개인정보와 관련된 불만을 처리하기 위하여 아래와 같이 개인정보보호책임자 및담당자를 지정하고 있습니다.
+                    <br>1. BACKPACKTOUR 개인정보보호책임자: 두루미
+                    <br> 2. BACKPACKTOUR 개인정보보호담당자: 사아자
+                    <br> 연락처 : 051-234-9999 / 이메일 : test@test.co.kr</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;color: #263c8b;font-weight: bold;">● 7조. 개인정보 처리방침 변경에 관한 사항    </td>
+            </tr>
+            <tr>
+                <td>① 본 개인정보 처리방침은 2018년 10월 20일부터 적용되며, 이후 처리방침의 변경이 있는 경우에는 변경사항의 시행 7일전부터 공지사항을 통하여 고지할 것입니다. </td>
+            </tr>
+        </table>
+    </div>
+    <footer>
+        <div id="footer_wrap">
+            <div class="footer_box"style="display: flex;">
+                <p onclick="location.href='refund2.html'"> 취소 환불 규정</p>
+                <p onclick="location.href='emailban.html'">이메일무단수집거부</p>
+                <p onclick="location.href='policy.html'">개인정보처리방침</p>
+            </div>
+            <div class="footer_box">
+                <p >상호명:BACKPACK TOUR</p>
+                <p>대표자:김가방</p>
+                <p>개인정보책임자:정주머니</p>
+                <p>상담전화:1234-5678</p>
+                <p>주소: 대한민국 부산광역시 아버지구 가방에들어가신다.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+<script>
+    function send(){
+        if(frm1.departure.value==""){alert("출발지을 지정하세요");frm1.departure.focus();return false;}
+        if(frm1.destination.value==""){alert("도착지을 지정하세요");frm1.destination.focus(); return false;}
+        if(frm1.date1.value==""){alert("출발일을 지정하세요");frm1.date1.focus();return false;}
+        if(frm1.date2.value==""){alert("도착일을 지정하세요");frm1.date2.focus(); return false;}
+        document.frm1.submit();
+    }
+    function login(){
+        if(loginfrm.usid.value==""){alert("ID또는 E-mail계정을 입력하세요.");loginfrm.usid.focus(); return false;}
+        if(loginfrm.uspw.value==""){alert("비밀번호를 입력하세요.");loginfrm.uspw.focus(); return false;}
+        document.loginfrm.submit();
+    }
+    function pop(){
+        window.open('signup.html','_blank','left=700,top=200,width=500,height=500',);
+    }
+    function pop2(){
+        window.open('id.html','_blank','left=700,top=200,width=500,height=500');
+    }
+    function pop3(){
+        window.open('idpw2.html','_blank','left=700,top=200,width=500,height=500');
+    }
+    
+</script>

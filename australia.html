@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BACKPACK</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png"></a>
+        </div>
+        <ul class="nav">
+            <li onclick="location.href='backpackmain.html'">Backpack Tour</li>
+            <li onclick="location.href='koreamain.html'">Trip To Korea</li>
+            <li onclick="location.href='euromain.html'">Trip To Europe</li>
+        </ul>
+    <div id="modalwindow">
+        <input type="checkbox" id="login" class="checkbox">
+        <label for="login" class="login_text">Login<img src="images/login2.png"style="width:45px; height:45px;"></label>
+        <div class="loginwrap">
+        <div class="loginmain">
+            <label for="login" class="loginclose">X</label>
+            <div id="login">
+                <form name="loginfrm" method="post" action="">
+                    <table class="logintable">
+                        <tr>
+                            <td colspan="3">
+                                <img src="images/logo.png">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="text" class="logintable_t"
+                                 placeholder="ID또는 E-mail계정을 입력해주세요." name="usid">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="password" class="logintable_t"
+                                placeholder="비밀번호를 입력해주세요." name="uspw">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="button" class="login_bt"
+                                value="Login" onclick="login()">
+                            </td>
+                        </tr>
+                        <tr class="login_sub">
+                            <td onclick="pop()">회원 가입</td>
+                            <td onclick="pop2()">계정 찾기</td>
+                            <td onclick="pop3()">비밀번호 찾기</td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <label for="login" class="loginback"></label>
+        </div>
+    </div>
+</header>
+    <div id="australia">
+        <div class="main_img">
+            <img src="images/austrlia_text.png">
+        </div>
+        <p class="main_text2">아름다운 자연과 유럽풍의 도시를 아우르는<br>
+            <span style="font-size: 55px; color: rgb(108, 92, 250);">"호주"</span>
+            존재하는 모든 것이 함께 공존하는 나라
+        </p>
+    </div>
+    <div id="middle_2">
+        <div class="middle_wrap_2">
+            <div class="mini_menu">HOME > EUROPE  > AUSTRALIA</div>
+        </div>
+    </div>
+    <div id="content" style="height:120px">
+        <div class="box4">
+            <div class="box1">
+                * BACKPACK TOUR * 가 추천하는 호주여행 
+            </div><!--con_end-->
+        </div>
+    </div>
+    <br>
+    <div id="content_3">
+        <div class="con3_title">데인트리 국립공원 (Daintree National Park)</div>
+        <div class="con3_box">
+            <div class="con3_box1">
+                <div class="con3_img">
+                    <img src="images/tour_a1.jpg">
+                </div>
+            </div>
+            <div class="con3_box1">
+                <ul class="con3_text">
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">유네스코 지정 자연유산</li>
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">세계에 손꼽히는 최고의 열대우림 체험</li>
+                    <br>
+                    <h3 style="color: rgb(68, 67, 67);">#데인트리 국립공원 정보</h3>
+                    <li style="color: gray;">   ＊비용 : 무료</li>
+                    <li style="color: gray;">- 주소지 : 2333 Cape Tribulation Rd, 케이프 트리 뷸 레이션 QLD 4873</li>
+                    <li style="color: gray;">- 면적 : 1200 평방 미터. km </li>
+                    <li style="color: gray;">- 웹사이트 : http://www.daintreerainforest.net.au/</li>
+                    <li style="color: gray;">- 문의전화 : +61-137468</li>
+                </ul>
+            </div>
+        </div>
+    </div><!--content1_end-->
+    <br>
+    <br>
+    <div id="content_3">
+        <div class="con3_title">시드니 오페라 하우스(Sydney Opera House)</div>
+        <div class="con3_box">
+            <div class="con3_box1">
+                <div class="con3_img">
+                    <img src="images/tour_a2.jpg">
+                </div>
+            </div>
+            <div class="con3_box1">
+                <ul class="con3_text">
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">세계에서 가장 유명한 건축물</li>
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">세계에서 가장 유명한 공연장</li>
+                    <br>
+                    <h3 style="color: rgb(68, 67, 67);">#오페라 하우스 정보</h3>
+                    <li style="color: gray;">- 입장료 : 일부구역 무료, 가이드투어 20~100 AD</li>
+                    <li style="color: gray;">- 입장시간 : 연중무휴</li>
+                    <li style="color: gray;">- 주소지 : Bennelong Point Sydney NSW 2000 Australia</li>
+                    <li style="color: gray;">- 웹사이트 : http://www.sydneyoperahouse.com</li>
+                    <li style="color: gray;">- 문의전화 : +61-2-66-9250-7777</li>
+                </ul>
+            </div>
+        </div>
+    </div><!--content2_end-->
+    <br>
+    <br>
+    <div class="guide_icon"onclick="location.href='reservation_hozu.html'"></div>
+    <div id="content_3">
+        <div class="con3_title">그레이트배리어리프(Great Barrier Reef)</div>
+        <div class="con3_box">
+            <div class="con3_box1">
+                <div class="con3_img">
+                    <img src="images/tour_a3.jpg">
+                </div>
+            </div>
+            <div class="con3_box1">
+                <ul class="con3_text">
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">산호초의 오색찬란한 향연</li>
+                    <li style="font-size: 35px; color: rgb(110, 94, 79);">어떤 이유로든 꼭 가봐야하는 그곳</li>
+                    <br>
+                    <h3 style="color: rgb(68, 67, 67);">#관광 정보</h3>
+                    <li style="color: gray;">- 추천 관광시간 : 2 ~ 3일</li>
+                    <li style="color: gray;">   *각종 자연문화 관광을 내맘대로 선택</li>
+                    <li style="color: gray;">- 주소지 : 오스트레일리아 퀸즐랜드 주 그레이트비리어리프</li>
+                    <li style="color: gray;">- 문의전화 : +61-7-40570700</li>
+                </ul>
+            </div>
+        </div>
+    </div><!--content3_end-->
+    <footer>
+        <div id="footer_wrap">
+            <div class="footer_box"style="display: flex;">
+                <p onclick="location.href='refund2.html'"> 취소 환불 규정</p>
+                <p onclick="location.href='emailban.html'">이메일무단수집거부</p>
+                <p onclick="location.href='policy.html'">개인정보처리방침</p>
+            </div>
+            <div class="footer_box">
+                <p >상호명:BACKPACK TOUR</p>
+                <p>대표자:김가방</p>
+                <p>개인정보책임자:정주머니</p>
+                <p>상담전화:1234-5678</p>
+                <p>주소: 대한민국 부산광역시 아버지구 가방에들어가신다.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+<script>
+    function send(){
+        if(frm1.departure.value==""){alert("출발지을 지정하세요");frm1.departure.focus();return false;}
+        if(frm1.destination.value==""){alert("도착지을 지정하세요");frm1.destination.focus(); return false;}
+        if(frm1.date1.value==""){alert("출발일을 지정하세요");frm1.date1.focus();return false;}
+        if(frm1.date2.value==""){alert("도착일을 지정하세요");frm1.date2.focus(); return false;}
+        document.frm1.submit();
+    }
+    function login(){
+        if(loginfrm.usid.value==""){alert("ID또는 E-mail계정을 입력하세요.");loginfrm.usid.focus(); return false;}
+        if(loginfrm.uspw.value==""){alert("비밀번호를 입력하세요.");loginfrm.uspw.focus(); return false;}
+        document.loginfrm.submit();
+    }
+    function pop(){
+        window.open('signup.html','_blank','left=700,top=200,width=500,height=500',);
+    }
+    function pop2(){
+        window.open('id.html','_blank','left=700,top=200,width=500,height=500');
+    }
+    function pop3(){
+        window.open('idpw2.html','_blank','left=700,top=200,width=500,height=500');
+    }
+</script>
